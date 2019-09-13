@@ -1,0 +1,49 @@
+body {
+
+    background-color: orange;
+    color: brown;
+}
+
+h1 {
+    color: red;
+    background-color: burlywood;
+}
+
+h2 {
+    color: yellow;
+    background-color: green;
+}
+
+h3 {
+    color: blue;
+}
+
+ul {
+    color: brown;
+}
+
+p {
+    color: brown;
+}
+
+div {
+    border: 10px solid skyblue;
+}
+
+.surname {
+    font-size: 36px;
+    color: red;
+    background-color: green;
+    font-weight: bold;
+    font-style: italic;
+}
+
+span {
+    font-size: 36px;
+    color: red;
+    background-color: green;
+    width: 400px;
+    height: 300px;
+    font-weight: bold;
+    font-style: italic;
+}
