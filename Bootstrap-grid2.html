@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
     <head>
         <title>
-
+            practices
         </title>
 
         <!-- Required meta tags -->
@@ -20,7 +20,6 @@
                 height: 200px;
 
                 padding: 40px;
-                border-color: solid green;
                 overflow: auto;
             }
 
@@ -40,38 +39,47 @@
             .img {
                 object-fit: contain;
             }
+
+            .body {
+                background-image: url("static/ibhubs_logo.png");
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
         </style>`
     </head>
 
     <body>
-        <div class="container">
-            <div class="row border">
-                <div class="col-9 color yellow">9</div>
-                <div class="col-3 color blue">3</div>
-                <div class="col-4 color yellow">4</div>
-                <div class="col-3 color blue">3</div>
-                <div class="col-5 color yellow">5</div>
-                <div class="col-3 color blue">3</div>
-                <div class="col-6 color yellow">6</div>
-                <div class="col-3 color blue">3</div>
+        <marquee>
+            <div class="container">
+                <div class="row" style="border:10px solid green; ">
+
+                    <div class="col-9 color yellow">9</div>
+                    <div class="col-3 color blue">3</div>
+                    <div class="col-4 color yellow">4</div>
+                    <div class="col-3 color blue">3</div>
+                    <div class="col-5 color yellow">5</div>
+                    <div class="col-3 color blue">3</div>
+                    <div class="col-6 color yellow">6</div>
+                    <div class="col-3 color blue">3</div>
+                </div>
             </div>
-        </div>
+        </marquee>
         <div class="container">
-            <div class="row">
-                <div class="col-6">
+            <div class="row" style="border:10px solid green; ">
+                <div class="col-6 body ">
                     <h1>
                         iBHubs
                     </h1>
                     <p>PAN INDIA STARTUP HUB!</p>
                     <p>
                         500 hubs with 4 spokes each,establishing a total of 2500 centres across India by the end of 2019
-                    </p>
+                        </p ">
                     <p>
                         With this,world-class innovations and best practices can reach people across the nation rapidly
                     </p>
                 </div>
-
-                <img class="col-6 img" src="static/ibhubs_logo.png" alt="ibhubs_logo">
+                                      
+                <img class="col-6 img "  src="static/ibhubs_logo.png " alt="ibhubs_logo ">
             </div>
         </div>
     </body>
