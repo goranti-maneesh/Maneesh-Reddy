@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="../bootstrap/bootstrap.min.css" />
+    <script src="../bootstrap/jquery.min.js"></script>
+    <script src="../bootstrap/popper.min.js"></script>
+    <script src="../bootstrap/bootstrap.min.js"></script>
+    <style>
+      body {
+        padding-top: 10px;
+      }
+
+      .row-1 {
+        padding-top: 12px;
+        padding-bottom: 10px;
+      }
+
+      .topics-events {
+        font-size: 12px;
+        text-align: center;
+      }
+
+      .topics-font {
+        color: grey;
+      }
+
+      #topics-border {
+        border-bottom: 2px solid blue;
+        padding-bottom: 8px;
+        margin-bottom: 0px;
+      }
+
+      .text-center {
+        text-align: center;
+      }
+
+      .topics-moblile {
+        border-top: 1px solid lightgrey;
+        border-bottom: 1px solid lightgrey;
+        padding-bottom: 30px;
+        padding-top: 30px;
+        margin-top: -6px;
+      }
+
+      .opengl-mobile {
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+
+      .row-opengl-mobile-border {
+        border: 1px solid lightgrey;
+        margin: 0px;
+        margin-top: 30px;
+      }
+
+      .ash-tag-mobile {
+        width: 60px;
+        padding-bottom: 16px;
+        padding-top: 16px;
+        background-color: #e6f2ff;
+      }
+
+      .star-font {
+        font-size: 13px;
+      }
+
+      .border-mobile {
+        border-bottom: 1px solid lightgrey;
+        padding-bottom: 25px;
+        padding-top: 25px;
+      }
+
+      .load-more-mobile {
+        color: #3385ff;
+        font-size: 10px;
+        border: 1px solid lightgrey;
+        margin-top: 20px;
+      }
+
+      .load-more-row-mobile {
+        padding-bottom: 40px;
+      }
+
+      .last-line-mobile {
+        color: #3385ff;
+        background-color: #e6f2ff;
+        margin-left: 5px;
+        margin-right: 5px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 row-1" style="background-color:black">
+          </style>
+          <div class="row">
+            <div class="col-2">
+              <img style="background-color:white" src="assets/github-logo.svg" alt="github logo">
+            </div>
+            <div class="col-9" style="text-align:right">
+              <button style="background-color:black;border:1px solid white" type="button" class="btn btn-dark">Sign Up</button>
+            </div>
+            <div class="col-1" style="color:white;padding-top:0px;padding-bottom:0px">
+              <p styple="">&#9776;</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12" style="text-align:center;color:grey;padding-top:10px;font-size:14px">
+          <p>Explore</p>
+        </div>
+        <div class="col-12">
+          <div class="row">
+            <div class="col-2">
+
+            </div>
+            <div class="col-2 topics-events">
+              <p id="topics-border">Topics</p>
+            </div>
+            <div class="col-2 topics-events topics-font">
+              <p>Trending</p>
+            </div>
+            <div class="col-2 topics-events topics-font">
+              <p>Collections</p>
+            </div>
+            <div class="col-2 topics-events topics-font">
+              <p>Events</p>
+            </div>
+            <div class="col-2">
+
+            </div>
+            <div class="col-12 text-center topics-moblile">
+              <h3>Topics</h3>
+              <p style="font-size:14px">Browse popular topics on GitHub</p>
+            </div>
+            <div class="col-12"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row text-center row-opengl-mobile-border">
+        <div class="col-12 opengl-mobile">
+          <img style="width:80px;height:60px" src="assets/opengl.png" alt="opengl">
+        </div>
+        <div class="col-12">
+          <h6>OpenGL</h6>
+          <p style="font-size:12px;color:grey;padding-bottom:20px">OpenGL is a software interface that allows a programmer to communicate with graphics hardware.</p>
+        </div>
+      </div>
+      <div class="row text-center row-opengl-mobile-border">
+        <div class="col-12 opengl-mobile">
+          <img style="width:80px;height:60px" src="assets/flask.png" alt="flask">
+        </div>
+        <div class="col-12">
+          <h6>Flask</h6>
+          <p style="font-size:12px;color:grey;padding-bottom:20px">Flask is a web framework for Python based on the werkzeug toolkit</p>
+        </div>
+      </div>
+      <div class="row text-center row-opengl-mobile-border">
+        <div class="col-12 opengl-mobile">
+          <img style="width:80px;height:60px" src="assets/gradle.png" alt="gradle">
+        </div>
+        <div class="col-12">
+          <h6>Gradle</h6>
+          <p style="font-size:12px;color:grey;padding-bottom:20px">Gradle is an open-source build tool that helps teams build, automate and deliver better software, faster.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" style="padding-top:40px">
+          <h2>All featured topics</h2>
+        </div>
+      </div>
+      <div class="row border-mobile">
+        <div class="col-12">
+        </div>
+        <div class="col-1 text-center">
+          <p class="ash-tag-mobile">#</p>
+        </div>
+        <div class="col-11">
+          <div class="row">
+            <div class="col-12">
+              <h6>3D</h6>
+            </div>
+            <div class="col-12">
+              <p style="font-size:12px;color:grey">3D modelling is the process if virtually developing the surface and structure of 3D object</p>
+            </div>
+            <div class="col-12">
+              <button type="button" class="btn btn-light" style="border:1px solid gray;background-color:#f0f0f0"> <img style="padding-right:3px;padding-bottom:2px" src="assets/star.svg"></img><b class="star-font">Star</b></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row border-mobile">
+        <div class="col-12">
+        </div>
+        <div class="col-1 text-center">
+          <p class="ash-tag-mobile">#</p>
+        </div>
+        <div class="col-11">
+          <div class="row">
+            <div class="col-12">
+              <h6>Ajax</h6>
+            </div>
+            <div class="col-12">
+              <p style="font-size:12px;color:grey">Ajax is a technique for creating interactive web applications.</p>
+            </div>
+            <div class="col-12">
+              <button type="button" class="btn btn-light" style="border:1px solid gray;background-color:#f0f0f0"> <img style="padding-right:3px;padding-bottom:2px" src="assets/star.svg"></img><b class="star-font">Star</b></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row border-mobile">
+        <div class="col-12">
+        </div>
+        <div class="col-1 text-center">
+          <p class="ash-tag-mobile">#</p>
+        </div>
+        <div class="col-11">
+          <div class="row">
+            <div class="col-12">
+              <h6>Algorithm</h6>
+            </div>
+            <div class="col-12">
+              <p style="font-size:12px;color:grey">Algorithms are self-contained sequences that carry out a variety of tasks.</p>
+            </div>
+            <div class="col-12">
+              <button type="button" class="btn btn-light" style="border:1px solid gray;background-color:#f0f0f0"> <img style="padding-right:3px;padding-bottom:2px" src="assets/star.svg"></img><b class="star-font">Star</b></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row border-mobile">
+        <div class="col-12">
+        </div>
+        <div class="col-1 text-center">
+          <img style="width:65px;height:65px" src="assets/amphp.png" alt="amphp">
+        </div>
+        <div class="col-11">
+          <div class="row">
+            <div class="col-12">
+              <h6>Amp</h6>
+            </div>
+            <div class="col-12">
+              <p style="font-size:12px;color:grey">Amp is a non-blocking concurrency framework for PHP.</p>
+            </div>
+            <div class="col-12">
+              <button type="button" class="btn btn-light" style="border:1px solid gray;background-color:#f0f0f0"> <img style="padding-right:3px;padding-bottom:2px" src="assets/star.svg"></img><b class="star-font">Star</b></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row border-mobile">
+        <div class="col-1 text-center">
+          <img style="width:65px;height:65px" src="assets/android.png" alt="android">
+        </div>
+        <div class="col-11">
+          <div class="row">
+            <div class="col-12">
+              <h6>Android</h6>
+            </div>
+            <div class="col-12">
+              <p style="font-size:12px;color:grey">Android is an operating system build by Google designed for mobile services</p>
+            </div>
+            <div class="col-12">
+              <button type="button" class="btn btn-light" style="border:1px solid gray;background-color:#f0f0f0"> <img style="padding-right:3px;padding-bottom:2px" src="assets/star.svg"></img><b class="star-font">Star</b></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row border-mobile">
+        <div class="col-1 text-center">
+          <img style="width:65px;height:65px" src="assets/angular.png" alt="android">
+        </div>
+        <div class="col-11">
+          <div class="row">
+            <div class="col-12">
+              <h6>Android</h6>
+            </div>
+            <div class="col-12">
+              <p style="font-size:12px;color:grey">Android is an operating system build by Google designed for mobile services</p>
+            </div>
+            <div class="col-12">
+              <button type="button" class="btn btn-light" style="border:1px solid gray;background-color:#f0f0f0"> <img style="padding-right:3px;padding-bottom:2px" src="assets/star.svg"></img><b class="star-font">Star</b></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row border-mobile">
+        <div class="col-1 text-center">
+          <img style="width:65px;height:65px" src="assets/ansible.png" alt="android">
+        </div>
+        <div class="col-11">
+          <div class="row">
+            <div class="col-12">
+              <h6>Ansible</h6>
+            </div>
+            <div class="col-12">
+              <p style="font-size:12px;color:grey">Ansible is simple and powerful automation engine.</p>
+            </div>
+            <div class="col-12">
+              <button type="button" class="btn btn-light" style="border:1px solid gray;background-color:#f0f0f0"> <img style="padding-right:3px;padding-bottom:2px" src="assets/star.svg"></img><b class="star-font">Star</b></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row border-mobile">
+        <div class="col-1 text-center">
+          <p class="ash-tag-mobile">#</p>
+        </div>
+        <div class="col-11">
+          <div class="row">
+            <div class="col-12">
+              <h6>Ansible</h6>
+            </div>
+            <div class="col-12">
+              <p style="font-size:12px;color:grey">Ansible is simple and powerful automation engine.</p>
+            </div>
+            <div class="col-12">
+              <button type="button" class="btn btn-light" style="border:1px solid gray;background-color:#f0f0f0"> <img style="padding-right:3px;padding-bottom:2px" src="assets/star.svg"></img><b class="star-font">Star</b></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row border-mobile">
+        <div class="col-1 text-center">
+          <img style="width:65px;height:65px" src="assets/arduino.png" alt="android">
+        </div>
+        <div class="col-11">
+          <div class="row">
+            <div class="col-12">
+              <h6>Ansible</h6>
+            </div>
+            <div class="col-12">
+              <p style="font-size:12px;color:grey">Ansible is simple and powerful automation engine.</p>
+            </div>
+            <div class="col-12">
+              <button type="button" class="btn btn-light" style="border:1px solid gray;background-color:#f0f0f0"> <img style="padding-right:3px;padding-bottom:2px" src="assets/star.svg"></img><b class="star-font">Star</b></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row border-mobile">
+        <div class="col-1 text-center">
+          <img style="width:65px;height:65px" src="assets/aspnet.png" alt="android">
+        </div>
+        <div class="col-11">
+          <div class="row">
+            <div class="col-12">
+              <h6>Ansible</h6>
+            </div>
+            <div class="col-12">
+              <p style="font-size:12px;color:grey">Ansible is simple and powerful automation engine.</p>
+            </div>
+            <div class="col-12">
+              <button type="button" class="btn btn-light" style="border:1px solid gray;background-color:#f0f0f0"> <img style="padding-right:3px;padding-bottom:2px" src="assets/star.svg"></img><b class="star-font">Star</b></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row border-mobile">
+        <div class="col-1 text-center">
+          <img style="width:65px;height:65px" src="assets/atom.png" alt="android">
+        </div>
+        <div class="col-11">
+          <div class="row">
+            <div class="col-12">
+              <h6>Ansible</h6>
+            </div>
+            <div class="col-12">
+              <p style="font-size:12px;color:grey">Ansible is simple and powerful automation engine.</p>
+            </div>
+            <div class="col-12">
+              <button type="button" class="btn btn-light" style="border:1px solid gray;background-color:#f0f0f0"> <img style="padding-right:3px;padding-bottom:2px" src="assets/star.svg"></img><b class="star-font">Star</b></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row border-mobile">
+        <div class="col-1 text-center">
+          <img style="width:65px;height:65px" src="assets/awesome.png" alt="android">
+        </div>
+        <div class="col-11">
+          <div class="row">
+            <div class="col-12">
+              <h6>Ansible</h6>
+            </div>
+            <div class="col-12">
+              <p style="font-size:12px;color:grey">Ansible is simple and powerful automation engine.</p>
+            </div>
+            <div class="col-12">
+              <button type="button" class="btn btn-light" style="border:1px solid gray;background-color:#f0f0f0"> <img style="padding-right:3px;padding-bottom:2px" src="assets/star.svg"></img><b class="star-font">Star</b></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row border-mobile">
+        <div class="col-1 text-center">
+          <img style="width:65px;height:65px" src="assets/aws.png" alt="android">
+        </div>
+        <div class="col-11">
+          <div class="row">
+            <div class="col-12">
+              <h6>Ansible</h6>
+            </div>
+            <div class="col-12">
+              <p style="font-size:12px;color:grey">Ansible is simple and powerful automation engine.</p>
+            </div>
+            <div class="col-12">
+              <button type="button" class="btn btn-light" style="border:1px solid gray;background-color:#f0f0f0"> <img style="padding-right:3px;padding-bottom:2px" src="assets/star.svg"></img><b class="star-font">Star</b></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row border-mobile">
+        <div class="col-1 text-center">
+          <img style="width:65px;height:65px" src="assets/azure.png" alt="android">
+        </div>
+        <div class="col-11">
+          <div class="row">
+            <div class="col-12">
+              <h6>Ansible</h6>
+            </div>
+            <div class="col-12">
+              <p style="font-size:12px;color:grey">Ansible is simple and powerful automation engine.</p>
+            </div>
+            <div class="col-12">
+              <button type="button" class="btn btn-light" style="border:1px solid gray;background-color:#f0f0f0"> <img style="padding-right:3px;padding-bottom:2px" src="assets/star.svg"></img><b class="star-font">Star</b></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row border-mobile">
+        <div class="col-1 text-center">
+          <p class="ash-tag-mobile">#</p>
+        </div>
+        <div class="col-11">
+          <div class="row">
+            <div class="col-12">
+              <h6>Ansible</h6>
+            </div>
+            <div class="col-12">
+              <p style="font-size:12px;color:grey">Ansible is simple and powerful automation engine.</p>
+            </div>
+            <div class="col-12">
+              <button type="button" class="btn btn-light" style="border:1px solid gray;background-color:#f0f0f0"> <img style="padding-right:3px;padding-bottom:2px" src="assets/star.svg"></img><b class="star-font">Star</b></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row text-center load-more-row-mobile">
+        <div class="col-12 load-more-mobile">
+          <p style="padding-top:13px"><b>Load more...</b></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <p style="font-size:16px"><b>Popular topics</b></p>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-11" style="padding-bottom:10px">
+          <div class="row">
+            <div class="col-2 last-line-mobile">
+              <p style="font-size:12px;padding-top:9px">react</p>
+            </div>
+            <div class="col-3 last-line-mobile">
+              <p style="font-size:12px;padding-top:9px">javascript</p>
+            </div>
+            <div class="col-1 last-line-mobile">
+              <p style="font-size:12px;padding-top:9px">css</p>
+            </div>
+            <div class="col-2 last-line-mobile">
+              <p style="font-size:12px;padding-top:9px">python</p>
+            </div>
+            <div class="col-1 last-line-mobile">
+              <p style="font-size:12px;padding-top:9px">html</p>
+            </div>
+            <div class="col-3 last-line-mobile">
+              <p style="font-size:12px;padding-top:9px">ecommerce</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-11">
+          <div class="row">
+            <div class="col-2 last-line-mobile">
+              <p style="font-size:12px;padding-top:9px">python3</p>
+            </div>
+            <div class="col-4 last-line-mobile">
+              <p style="font-size:12px;padding-top:9px">ecommerce-platform</p>
+            </div>
+            <div class="col-2 last-line-mobile">
+              <p style="font-size:12px;padding-top:9px">nci-itcr</p>
+            </div>
+            <div class="col-4 last-line-mobile">
+              <p style="font-size:12px;padding-top:9px">solidus-extensions</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+</html>
