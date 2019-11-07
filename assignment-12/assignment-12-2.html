@@ -56,6 +56,17 @@
                         padding-top: 120px;
                         padding-bottom: 150px;
                   }
+
+                  .left-item {
+                        display: inline-block;
+                        width: 48%;
+                        margin-top: 100px;
+                  }
+
+                  .right-item {
+                        display: inline-block;
+                        width: 50%;
+                  }
             </style>
       </head>
 
@@ -70,15 +81,13 @@
                               <a href="#" class="btn btn-primary">Get Gmail</a>
                         </div>
                   </div>
-                  <div class="row d-none d-md-flex d-xl-none">
-                        <div class="col-6 get-more-done-tab">
+                  <div class="">
+                        <div class="left-item">
                               <h3>Get more done with Gmail</h3>
                               <p>Now more secure, smarter and easier to use--helping you save time and do more with your inbox</p>
                               <a href="#" class="btn btn-primary">Create an account</a>
                         </div>
-                        <div class="col-6">
-                              <img style="padding-top:30px;width:100%" src="assets/landing-page-image-desktop.png" alt="landing page">
-                        </div>
+                        <img class="right-item" style="padding-top:30px" src="assets/landing-page-image-desktop.png" alt="landing page">
                   </div>
                   <div class="row text-center d-md-none">
                         <div class="col-12 heading-mobile-get-more">
@@ -109,7 +118,8 @@
                               <img style="width:100%" src="assets/experience-image-mobile-desktop.png" alt="experience image">
                         </div>
                   </div>
-                  <div class="row text-center">
+                  <div class="row d-flex d-md-none text-center">
+
                         <div class="col-12 heading-mobile-get-more">
                               <h3>Stay organised instantly</h3>
                         </div>
@@ -117,10 +127,40 @@
                               <p>See what's new at a glance and decide what you want to read and respond to</p>
                         </div>
                         <div class="col-12 heading-mobile-get-more">
-                              <img style="width:100%" src="assets/stay-organised-instantly-mobile.png" alt="stay organised" </div>
+                              <img style="width:100%" src="assets/stay-organised-instantly-mobile.png" alt="stay organised">
                         </div>
                   </div>
-                  <div class="row text-center">
+                  <div class="row d-none d-md-flex">
+                        <div class="col-6">
+                              <div class="row">
+
+                                    <div class="col-12 heading-mobile-get-more">
+                                          <h3>Stay organised instantly</h3>
+                                    </div>
+                                    <div class="col-12">
+                                          <p>See what's new at a glance and decide what you want to read and respond to</p>
+                                    </div>
+                                    <div class="col-12 heading-mobile-get-more">
+                                          <img style="width:100%" src="assets/stay-organised-instantly-desktop.png" alt="stay organised">
+                                    </div>
+                              </div>
+                        </div>
+                        <div class="col-6">
+                              <div class="row">
+
+                                    <div class="col-12 heading-mobile-get-more">
+                                          <h3>Never drop the ball</h3>
+                                    </div>
+                                    <div class="col-12">
+                                          <p>Get nudges that remaind you to follow up and respond to messages, so that nothing slips through the cracks.</p>
+                                    </div>
+                                    <div class="col-12 heading-mobile-get-more">
+                                          <img style="width:100%" src="assets/never-drop-the-ball-desktop.png" alt="stay organised">
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+                  <div class="row d-md-none text-center">
                         <div class="col-12 heading-mobile-get-more">
                               <h3>Never drop the ball</h3>
                         </div>
@@ -128,10 +168,10 @@
                               <p>Get nudges that remaind you to follow up and respond to messages, so that nothing slips through the cracks.</p>
                         </div>
                         <div class="col-12 heading-mobile-get-more">
-                              <img style="width:100%" src="assets/never-drop-the-ball-mobile.png" alt="never drop th ball">
+                              <img style="width:50%" src="assets/never-drop-the-ball-mobile.png" alt="never drop th ball">
                         </div>
                   </div>
-                  <div class="row text-center">
+                  <div class="row d-md-none text-center">
                         <div class="col-12 heading-mobile-get-more">
                               <h3>Take right action from the inbox</h3>
                         </div>
@@ -139,10 +179,19 @@
                               <p>View attachments, RSVP to events, snooze messages and more without opening any emails</p>
                         </div>
                         <div class="col-12 heading-mobile-get-more">
-                              <img style="width:100%" src="assets/take-action-mobile.png" alt="Take action">
+                              <img style="width:50%" src="assets/take-action-mobile.png" alt="Take action">
                         </div>
                   </div>
-                  <div class="row text-center">
+                  <div class="row d-none d-md-flex">
+                        <div class="col-6 heading-mobile-get-more">
+                              <h3>Take right action from the inbox</h3>
+                              <p>View attachments, RSVP to events, snooze messages and more without opening any emails</p>
+                        </div>
+                        <div class="col-6 heading-mobile-get-more">
+                              <img style="width:100%" src="assets/take-action-desktop.png" alt="Take action">
+                        </div>
+                  </div>
+                  <div class="row d-md-none text-center">
                         <div class="col-12 heading-mobile-get-more">
                               <h3>Avoid suspicious emails</h3>
                         </div>
@@ -150,7 +199,16 @@
                               <p>Gmail blocks 99.9% of dangerous emails before they reach you. If we think something seems phish-y, you'll get a warning</p>
                         </div>
                         <div class="col-12 heading-mobile-get-more">
-                              <img style="width:100%" src="assets/avoid-suspicious-emails-mobile.png" alt="avoid suspicious emails">
+                              <img style="width:50%" src="assets/avoid-suspicious-emails-mobile.png" alt="avoid suspicious emails">
+                        </div>
+                  </div>
+                  <div class="row d-none d-md-flex">
+                        <div class="col-6 heading-mobile-get-more">
+                              <img style="width:100%" src="assets/avoid-suspicious-emails-desktop.png" alt="avoid suspicious emails">
+                        </div>
+                        <div class="col-6 heading-mobile-get-more">
+                              <h3>Avoid suspicious emails</h3>
+                              <p>Gmail blocks 99.9% of dangerous emails before they reach you. If we think something seems phish-y, you'll get a warning</p>
                         </div>
                   </div>
                   <div class="row text-center">
