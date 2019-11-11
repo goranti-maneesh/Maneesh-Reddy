@@ -14,30 +14,21 @@
 
 @media(min-width:768px) {
       p {
-            background-color: blue;
             height: 100px;
             display: inline-block;
-            margin: 10px;
-            width: 45%;
+            width: 35%;
+            margin: 3%;
       }
 }
 
 @media(min-width:992px) {
       p {
-            background-color: blue;
-            height: 100px;
-            display: inline-block;
-            margin: 10px;
-            width: 22%;
+            width: 15%;
       }
 }
 
 @media(min-width:1200px) {
       p {
-            background-color: blue;
-            height: 100px;
-            display: inline-block;
-            margin: 10px;
-            width: 22%;
+            width: 20%;
       }
 }
