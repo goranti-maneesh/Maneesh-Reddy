@@ -27,7 +27,7 @@
         color: grey;
       }
 
-      #topics-border {
+      .topics-border {
         border-bottom: 2px solid blue;
         padding-bottom: 8px;
         margin-bottom: 0px;
@@ -91,18 +91,42 @@
         margin-right: 5px;
         display: inline-block;
         padding: 5px;
+        font-size: 15px;
+      }
+
+      .line-one-tab {
+        display: inline-block;
+        margin-left: 20px;
+        font-size: 10px;
+        color: grey;
+      }
+
+      .github-logo-filter {
+        filter: invert(100%);
+      }
+
+      .Topics-border-tab {
+        border-bottom: ;
+      }
+
+      .border-opengl-tab {
+        border: 1px solid lightgrey;
+      }
+
+      .margin-opengl-tab {
+        margin: 20px;
       }
     </style>
   </head>
 
   <body>
-    <div class="container">
-      <div class="row">
+    <!--<div class="container">
+      <div class="row d-md-none">
         <div class="col-12 row-1" style="background-color:black">
           </style>
           <div class="row">
             <div class="col-2">
-              <img style="background-color:white" src="assets/github-logo.svg" alt="github logo">
+              <img class="github-logo-filter" style="background-color:white" src="assets/github-logo.svg" alt="github logo">
             </div>
             <div class="col-9" style="text-align:right">
               <button style="background-color:black;border:1px solid white" type="button" class="btn btn-dark">Sign Up</button>
@@ -121,7 +145,7 @@
 
             </div>
             <div class="col-2 topics-events">
-              <p id="topics-border">Topics</p>
+              <p class="topics-border">Topics</p>
             </div>
             <div class="col-2 topics-events topics-font">
               <p>Trending</p>
@@ -143,7 +167,7 @@
           </div>
         </div>
       </div>
-      <div class="row text-center row-opengl-mobile-border">
+      <div class="row text-center row-opengl-mobile-border d-md-none">
         <div class="col-12 opengl-mobile">
           <img style="width:80px;height:60px" src="assets/opengl.png" alt="opengl">
         </div>
@@ -152,7 +176,7 @@
           <p style="font-size:12px;color:grey;padding-bottom:20px">OpenGL is a software interface that allows a programmer to communicate with graphics hardware.</p>
         </div>
       </div>
-      <div class="row text-center row-opengl-mobile-border">
+      <div class="row text-center row-opengl-mobile-border d-md-none">
         <div class="col-12 opengl-mobile">
           <img style="width:80px;height:60px" src="assets/flask.png" alt="flask">
         </div>
@@ -161,7 +185,7 @@
           <p style="font-size:12px;color:grey;padding-bottom:20px">Flask is a web framework for Python based on the werkzeug toolkit</p>
         </div>
       </div>
-      <div class="row text-center row-opengl-mobile-border">
+      <div class="row text-center row-opengl-mobile-border d-md-none">
         <div class="col-12 opengl-mobile">
           <img style="width:80px;height:60px" src="assets/gradle.png" alt="gradle">
         </div>
@@ -170,12 +194,12 @@
           <p style="font-size:12px;color:grey;padding-bottom:20px">Gradle is an open-source build tool that helps teams build, automate and deliver better software, faster.</p>
         </div>
       </div>
-      <div class="row">
+      <div class="row d-md-none">
         <div class="col-12" style="padding-top:40px">
           <h2>All featured topics</h2>
         </div>
       </div>
-      <div class="row border-mobile">
+      <div class="row border-mobile d-md-none">
         <div class="col-12">
         </div>
         <div class="col-2 text-center">
@@ -195,7 +219,7 @@
           </div>
         </div>
       </div>
-      <div class="row border-mobile">
+      <div class="row border-mobile d-md-none">
         <div class="col-12">
         </div>
         <div class="col-2 text-center">
@@ -215,7 +239,7 @@
           </div>
         </div>
       </div>
-      <div class="row border-mobile">
+      <div class="row border-mobile d-md-none">
         <div class="col-12">
         </div>
         <div class="col-2 text-center">
@@ -235,7 +259,7 @@
           </div>
         </div>
       </div>
-      <div class="row border-mobile">
+      <div class="row border-mobile d-md-none">
         <div class="col-12">
         </div>
         <div class="col-2 text-center">
@@ -255,7 +279,7 @@
           </div>
         </div>
       </div>
-      <div class="row border-mobile">
+      <div class="row border-mobile d-md-none">
         <div class="col-2 text-center">
           <img style="width:65px;height:65px" src="assets/android.png" alt="android">
         </div>
@@ -273,7 +297,7 @@
           </div>
         </div>
       </div>
-      <div class="row border-mobile">
+      <div class="row border-mobile d-md-none">
         <div class="col-2 text-center">
           <img style="width:65px;height:65px" src="assets/angular.png" alt="android">
         </div>
@@ -291,7 +315,7 @@
           </div>
         </div>
       </div>
-      <div class="row border-mobile">
+      <div class="row border-mobile d-md-none">
         <div class="col-2 text-center">
           <img style="width:65px;height:65px" src="assets/ansible.png" alt="android">
         </div>
@@ -309,7 +333,7 @@
           </div>
         </div>
       </div>
-      <div class="row border-mobile">
+      <div class="row border-mobile d-md-none">
         <div class="col-2 text-center">
           <p class="ash-tag-mobile">#</p>
         </div>
@@ -327,7 +351,7 @@
           </div>
         </div>
       </div>
-      <div class="row border-mobile">
+      <div class="row border-mobile d-md-none">
         <div class="col-2 text-center">
           <img style="width:65px;height:65px" src="assets/arduino.png" alt="android">
         </div>
@@ -345,7 +369,7 @@
           </div>
         </div>
       </div>
-      <div class="row border-mobile">
+      <div class="row border-mobile d-md-none">
         <div class="col-2 text-center">
           <img style="width:65px;height:65px" src="assets/aspnet.png" alt="android">
         </div>
@@ -363,7 +387,7 @@
           </div>
         </div>
       </div>
-      <div class="row border-mobile">
+      <div class="row border-mobile d-md-none">
         <div class="col-2 text-center">
           <img style="width:65px;height:65px" src="assets/atom.png" alt="android">
         </div>
@@ -381,7 +405,7 @@
           </div>
         </div>
       </div>
-      <div class="row border-mobile">
+      <div class="row border-mobile d-md-none">
         <div class="col-2 text-center">
           <img style="width:65px;height:65px" src="assets/awesome.png" alt="android">
         </div>
@@ -399,7 +423,7 @@
           </div>
         </div>
       </div>
-      <div class="row border-mobile">
+      <div class="row border-mobile d-md-none">
         <div class="col-2 text-center">
           <img style="width:65px;height:65px" src="assets/aws.png" alt="android">
         </div>
@@ -417,7 +441,7 @@
           </div>
         </div>
       </div>
-      <div class="row border-mobile">
+      <div class="row border-mobile d-md-none">
         <div class="col-2 text-center">
           <img style="width:65px;height:65px" src="assets/azure.png" alt="android">
         </div>
@@ -435,7 +459,7 @@
           </div>
         </div>
       </div>
-      <div class="row border-mobile">
+      <div class="row border-mobile d-md-none">
         <div class="col-2 text-center">
           <p class="ash-tag-mobile">#</p>
         </div>
@@ -453,17 +477,17 @@
           </div>
         </div>
       </div>
-      <div class="row text-center load-more-row-mobile">
+      <div class="row text-center load-more-row-mobile d-md-none">
         <div class="col-12 load-more-mobile">
           <p style="padding-top:13px"><b>Load more...</b></p>
         </div>
       </div>
-      <div class="row">
+      <div class="row d-md-none">
         <div class="col-12">
           <p style="font-size:16px"><b>Popular topics</b></p>
         </div>
       </div>
-      <div class="row">
+      <div class="row d-md-none">
         <div class="col-12">
           <p class="last-line-mobile">react</p>
           <p class="last-line-mobile">javascript</p>
@@ -475,6 +499,43 @@
           <p class="last-line-mobile">ecommerce-platform</p>
           <p class="last-line-mobile">nci-itcr</p>
           <p class="last-line-mobile">solidus-extensions</p>
+        </div>
+      </div>
+    </div>-->
+    <p class="line-one-tab">Explore</p>
+    <p class="line-one-tab topics-border">Topics</p>
+    <p class="line-one-tab">Trending</p>
+    <p class="line-one-tab">Collections</p>
+    <p class="line-one-tab">Events</p>
+    <div class="topics-moblile text-center">
+      <h3>Topics</h3>
+      <p style="font-size:12px">Browse popular topics on GitHub</p>
+    </div>
+    <!--  <div class="container">
+      <div class="row text-center ">
+        <div class="col-12">-->
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-4">
+          <div class="margin-opengl-tab border-opengl-tab">
+            <img style="width:80px;height:60px" src="assets/opengl.png" alt="opengl">
+            <h6>OpenGL</h6>
+            <p style="font-size:12px;color:grey;padding-bottom:20px">OpenGL is a software interface that allows a programmer to communicate with graphics hardware.</p>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="margin-opengl-tab border-opengl-tab">
+            <img style="width:80px;height:60px" src="assets/flask.png" alt="flask">
+            <h6>Flask</h6>
+            <p style="font-size:12px;color:grey;padding-bottom:20px">Flask is a web framework for Python based on the werkzeug toolkit</p>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="margin-opengl-tab border-opengl-tab">
+            <img style="width:80px;height:60px" src="assets/gradle.png" alt="gradle">
+            <h6>Gradle</h6>
+            <p style="font-size:12px;color:grey;padding-bottom:20px">Gradle is an open-source build tool that helps teams build, automate and deliver better software, faster.</p>
+          </div>
         </div>
       </div>
     </div>
