@@ -1,34 +1,43 @@
 @media(max-width:576px) {
-      body {
-            background-color: red;
-            font-size: 20px;
+      p {
+            background-color: blue;
+            height: 50px;
       }
 }
 
 @media(min-width:576px) {
-      body {
+      p {
             background-color: blue;
-            font-size: 30px;
+            height: 50px;
       }
 }
 
 @media(min-width:768px) {
-      body {
-            background-color: grey;
-            font-size: 40px;
+      p {
+            background-color: blue;
+            height: 100px;
+            display: inline-block;
+            margin: 10px;
+            width: 45%;
       }
 }
 
 @media(min-width:992px) {
-      body {
-            background-color: yellow;
-            font-size: 50px;
+      p {
+            background-color: blue;
+            height: 100px;
+            display: inline-block;
+            margin: 10px;
+            width: 22%;
       }
 }
 
 @media(min-width:1200px) {
-      body {
-            background-color: orange;
-            font-size: 60px;
+      p {
+            background-color: blue;
+            height: 100px;
+            display: inline-block;
+            margin: 10px;
+            width: 22%;
       }
 }
