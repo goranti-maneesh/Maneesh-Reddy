@@ -14,7 +14,7 @@
 
 @media(min-width:768px) {
       body {
-            background-color: orange;
+            background-color: grey;
             font-size: 40px;
       }
 }
@@ -28,7 +28,7 @@
 
 @media(min-width:1200px) {
       body {
-            background-color: grey;
+            background-color: orange;
             font-size: 60px;
       }
 }
