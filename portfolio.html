@@ -68,15 +68,26 @@
                               display: inline-block;
                               list-style-type: none;
                         }
+                        .div-skills {
+                              display: inline-block;
+                              width: 30%;
+                        }
                   }
 
                   @media(max-width:767px) {
                         .div-hobbies {
                               display: block;
+                              padding-top: 15px;
                         }
                         .div-li {
                               display: inline-block;
                               list-style-type: none;
+                        }
+                        .div-li-Skills {
+                              list-style-type: none;
+                        }
+                        .div-skills {
+                              padding-top: 15px;
                         }
                   }
             </style>
@@ -130,24 +141,30 @@
                                     <li class="div-li-Skills">
                                           <h4>Skills</h4>
                                     </li>
-                                    <li class="div-li" style="padding-left:12%">
-                                          <img style="width:70% " src="static/Skills/HTML Icon/html(1).png " atl="html-icon ">
-                                    </li>
-                                    <li class="div-li " style="padding-right:10% ">
-                                          <p>HTML</p>
-                                    </li>
-                                    <li class="div-li ">
-                                          <img style="width:70% " src="static/Skills/CSS Icon/css(1).png " atl="css-icon ">
-                                    </li>
-                                    <li class="div-li " style="padding-right:10% ">
-                                          <p>CSS</p>
-                                    </li>
-                                    <li class="div-li ">
-                                          <img style="width:70% " src="static/Skills/C Language Icon/css.png " atl="c language-icon ">
-                                    </li>
-                                    <li class="div-li " style="padding-right:10% ">
-                                          <p>C Programming</p>
-                                    </li>
+                                    <div class="div-skills">
+                                          <li class="div-li" style="padding-left:12%">
+                                                <img style="width:70% " src="static/Skills/HTML Icon/html(1).png " atl="html-icon ">
+                                          </li>
+                                          <li class="div-li " style="padding-right:10% ">
+                                                <p>HTML</p>
+                                          </li>
+                                    </div>
+                                    <div class="div-skills">
+                                          <li class="div-li ">
+                                                <img style="width:70% " src="static/Skills/CSS Icon/css(1).png " atl="css-icon ">
+                                          </li>
+                                          <li class="div-li " style="padding-right:10% ">
+                                                <p>CSS</p>
+                                          </li>
+                                    </div>
+                                    <div class="div-skills">
+                                          <li class="div-li ">
+                                                <img style="width:70% " src="static/Skills/C Language Icon/css.png " atl="c language-icon ">
+                                          </li>
+                                          <li class="div-li " style="padding-right:10% ">
+                                                <p>C Programming</p>
+                                          </li>
+                                    </div>
                               </ul>
                         </div>
                   </div>
