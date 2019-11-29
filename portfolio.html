@@ -15,22 +15,10 @@
 
                   }
 
-                  .About-me {
-                        display: inline-block;
-                        width: 49%;
-                  }
 
-                  .about-me-one {
-                        border-right: 2px solid skyblue;
-                  }
 
                   .div {
                         display: inline-block;
-                  }
-
-                  .div-li {
-                        display: inline-block;
-                        list-style-type: none;
                   }
 
                   span {
@@ -47,6 +35,49 @@
                         background-color: #999966;
                         margin-left: 5%;
                         margin-right: 3%;
+                  }
+
+                  .designer-line-one {
+                        font-size: 20px;
+                  }
+
+                  @media(min-width:768px) {
+                        .designer-line-one {
+                              font-size: 30px;
+                              padding-top: 10%;
+                        }
+                        .About-me {
+                              display: inline-block;
+                              width: 48%;
+                        }
+                        .about-me-one {
+                              border-right: 2px solid skyblue;
+                        }
+                        .about-me-padding {
+                              padding-left: 5%
+                        }
+                        .div-li-Skills {
+                              display: inline-block;
+                              list-style-type: none;
+                        }
+                        .div-hobbies {
+                              width: 32%;
+                              display: inline-block;
+                        }
+                        .div-li {
+                              display: inline-block;
+                              list-style-type: none;
+                        }
+                  }
+
+                  @media(max-width:767px) {
+                        .div-hobbies {
+                              display: block;
+                        }
+                        .div-li {
+                              display: inline-block;
+                              list-style-type: none;
+                        }
                   }
             </style>
       </head>
@@ -71,68 +102,68 @@
                         <div class="col-12">
                               <p class="background-border"></p>
                         </div>
-                        <div class="col-6">
+                        <div class="col-4 col-md-6">
                               <img style="width:75%;border-radius:50%;margin:5%" src="static/IMG-20190619-WA0022.jpg">
                         </div>
-                        <div class="col-6">
-                              <p style="font-size:30px;padding-top:25%;color:#66ff66">I'm a <b style="color:#ffff99">Designer</b>, with the ability to <b style="color:#ffff99">Solve Problems</b> and make everyone's life better</p>
+                        <div class="col-8 col-md-6 designer-line-one">
+                              <p style="color:#66ff66">I'm a <b style="color:#ffff99">Designer</b>, with the ability to <b style="color:#ffff99">Solve Problems</b> and make everyone's life better</p>
                         </div>
 
                   </div>
-                  <div class="row">
+                  <div class="row" style="margin:5%">
                         <div class="col-12">
                               <p style="font-size:25px">About <b class="border-me">Me</b></p>
                         </div>
                         <div>
                               <p class="About-me about-me-one" style="vertical-align:top;padding-right:3%">I really like to look professional. I always strive for the last minute delivery. Am very humble and polite. My strengths are working hard and sincere</p>
-                              <p class="About-me" style="padding-left:5%">Am graduated in Sree Dattha Educational Institutions affiliated to JNTUH University in department of Electrical and Electronics Engineering. Am from Hyderabad. My father is Private Employee and my mother is homemaker and
+                              <p class="About-me about-me-padding" style="">Am graduated in Sree Dattha Educational Institutions affiliated to JNTUH University in department of Electrical and Electronics Engineering. Am from Hyderabad. My father is Private Employee and my mother is homemaker and
                                     my elder sister is graduated in MBBS</p>
                         </div>
-                        <div class="div" style="padding-right:50px">
+                        <div class="div" style="padding-right:5%;padding-left:5%">
                               <button type="button" class="btn btn-primary">Contact Me</button>
                         </div>
                         <div>
                               <button type="button" class="btn btn-outline-primary">Know More</button>
                         </div>
-                        <div class="col-12" style="margin-top:10%;margin-bottom:10%">
-                              <ul style="padding:0px">
-                                    <li class="div-li" style="padding-right:12%">
+                        <div class="col-12" style="margin-top:10%">
+                              <ul style=" padding:0px ">
+                                    <li class="div-li-Skills">
                                           <h4>Skills</h4>
                                     </li>
-                                    <li class="div-li">
-                                          <img style="width:70%" src="static/Skills/HTML Icon/html(1).png" atl="html-icon">
+                                    <li class="div-li" style="padding-left:12%">
+                                          <img style="width:70% " src="static/Skills/HTML Icon/html(1).png " atl="html-icon ">
                                     </li>
-                                    <li class="div-li" style="padding-right:10%">
+                                    <li class="div-li " style="padding-right:10% ">
                                           <p>HTML</p>
                                     </li>
-                                    <li class="div-li">
-                                          <img style="width:70%" src="static/Skills/CSS Icon/css(1).png" atl="css-icon">
+                                    <li class="div-li ">
+                                          <img style="width:70% " src="static/Skills/CSS Icon/css(1).png " atl="css-icon ">
                                     </li>
-                                    <li class="div-li" style="padding-right:10%">
+                                    <li class="div-li " style="padding-right:10% ">
                                           <p>CSS</p>
                                     </li>
-                                    <li class="div-li">
-                                          <img style="width:70%" src="static/Skills/C Language Icon/css.png" atl="c language-icon">
+                                    <li class="div-li ">
+                                          <img style="width:70% " src="static/Skills/C Language Icon/css.png " atl="c language-icon ">
                                     </li>
-                                    <li class="div-li" style="padding-right:10%">
+                                    <li class="div-li " style="padding-right:10% ">
                                           <p>C Programming</p>
                                     </li>
                               </ul>
                         </div>
                   </div>
-                  <div class="row">
-                        <div class="col-12" style="margin-bottom:40px">
-                              <p style="font-size:25px">My <b>Educat<span>ion</span></b></p>
+                  <div class="row " style="padding:5%;background-color:#f2f2f2 ">
+                        <div class="col-12 " style="margin-bottom:40px ">
+                              <p style="font-size:25px ">My <b>Educat<span>ion</span></b></p>
                         </div>
-                        <div class="col-12" style="margin-bottom:30px">
-                              <div class="card mb-3">
-                                    <div class="row no-gutters">
-                                          <div class="col-4" style="text-align:center;padding-top:3%;padding-bottom:3%;background-color:skyblue">
-                                                <p style="font-size:25px">2015-2019</p>
-                                                <p style="font-size:25px">Graduation</p>
+                        <div class="col-12 " style="margin-bottom:30px;border-radius:10% ">
+                              <div class="card mb-3 ">
+                                    <div class="row no-gutters ">
+                                          <div class="col-4 " style="text-align:center;padding-top:3%;padding-bottom:3%;background-color:skyblue ">
+                                                <p style="font-size:25px ">2015-2019</p>
+                                                <p style="font-size:25px ">Graduation</p>
                                           </div>
-                                          <div class="col-8" style="background-color:lightgrey">
-                                                <div class="card-body">
+                                          <div class="col-8 " style="background-color:lightgrey ">
+                                                <div class="card-body ">
                                                       <p><b>BRANCH</b> : Electrical and Electronics Engineering</p>
                                                       <p><b>COLLEGE</b> : Sree dattha Educational Institutions</p>
                                                       <p><b>UNIVERSITY</b> : JNTUH</p>
@@ -141,15 +172,15 @@
                                     </div>
                               </div>
                         </div>
-                        <div class="col-12" style="margin-bottom:30px">
-                              <div class="card mb-3">
-                                    <div class="row no-gutters">
-                                          <div class="col-4" style="text-align:center;padding-top:3%;padding-bottom:3%;background-color:skyblue">
-                                                <p style="font-size:25px">2013-2015</p>
-                                                <p style="font-size:25px">Intermediate</p>
+                        <div class="col-12 " style="margin-bottom:30px ">
+                              <div class="card mb-3 ">
+                                    <div class="row no-gutters ">
+                                          <div class="col-4 " style="text-align:center;padding-top:3%;padding-bottom:3%;background-color:skyblue ">
+                                                <p style="font-size:25px ">2013-2015</p>
+                                                <p style="font-size:25px ">Intermediate</p>
                                           </div>
-                                          <div class="col-8" style="background-color:lightgrey">
-                                                <div class="card-body">
+                                          <div class="col-8 " style="background-color:lightgrey ">
+                                                <div class="card-body ">
                                                       <p><b>BRANCH</b> : MPC(Maths, physics and chemistry)</p>
                                                       <p><b>COLLEGE</b> : Narayana Junior College</p>
                                                 </div>
@@ -157,15 +188,15 @@
                                     </div>
                               </div>
                         </div>
-                        <div class="col-12" style="margin-bottom:30px">
-                              <div class="card mb-3">
-                                    <div class="row no-gutters">
-                                          <div class="col-4" style="text-align:center;padding-top:3%;padding-bottom:3%;background-color:skyblue">
-                                                <p style="font-size:25px">2012-2013</p>
-                                                <p style="font-size:25px">SSC</p>
+                        <div class="col-12 " style="margin-bottom:30px ">
+                              <div class="card mb-3 ">
+                                    <div class="row no-gutters ">
+                                          <div class="col-4 " style="text-align:center;padding-top:3%;padding-bottom:3%;background-color:skyblue ">
+                                                <p style="font-size:25px ">2012-2013</p>
+                                                <p style="font-size:25px ">SSC</p>
                                           </div>
-                                          <div class="col-8" style="background-color:lightgrey">
-                                                <div class="card-body">
+                                          <div class="col-8 " style="background-color:lightgrey ">
+                                                <div class="card-body ">
                                                       <p><b>SCHOOL</b> : Karthikeya Educational Institutions</p>
                                                 </div>
                                           </div>
@@ -173,47 +204,53 @@
                               </div>
                         </div>
                   </div>
-                  <div class="row">
-                        <div class="col-12">
-                              <p style="font-size:25px">My <b>Hobb<span>ies</span></b></p>
+                  <div class="row" style="margin:5%">
+                        <div class="col-12 ">
+                              <p style="font-size:25px ">My <b>Hobb<span>ies</span></b></p>
                         </div>
-                        <div class="col-12" style="padding-top:5%">
-                              <ul style="padding:0px">
-                                    <li class="div-li">
-                                          <img src="static/Hobbies/music-player/music-player.png">
-                                    </li>
-                                    <li class="div-li" style="padding-right:10%">
-                                          <p style="font-size:20px;padding-left:10px">Listening music</p>
-                                    </li>
-                                    <li class="div-li">
-                                          <img src="static/Hobbies/swimming/swimming.png">
-                                    </li>
-                                    <li class="div-li" style="padding-right:10%">
-                                          <p style="font-size:20px;padding-left:10px">Swimming</p>
-                                    </li>
-                                    <li class="div-li">
-                                          <img src="static/Hobbies/cricket-player/cricket-player.png">
-                                    </li>
-                                    <li class="div-li" style="padding-right:10%">
-                                          <p style="font-size:20px;padding-left:10px">Playing games</p>
-                                    </li>
+                        <div class="col-12 " style="padding-top:3% ">
+                              <ul style="padding:0px ">
+                                    <div class="div-hobbies">
+                                          <li class="div-li ">
+                                                <img src="static/Hobbies/music-player/music-player.png ">
+                                          </li>
+                                          <li class="div-li " style="padding-right:7% ">
+                                                <p style="font-size:20px;padding-left:10px ">Listening music</p>
+                                          </li>
+                                    </div>
+                                    <div class="div-hobbies">
+                                          <li class="div-li ">
+                                                <img src="static/Hobbies/swimming/swimming.png ">
+                                          </li>
+                                          <li class="div-li " style="padding-right:7% ">
+                                                <p style="font-size:20px;padding-left:10px ">Swimming</p>
+                                          </li>
+                                    </div>
+                                    <div class="div-hobbies">
+                                          <li class="div-li ">
+                                                <img src="static/Hobbies/cricket-player/cricket-player.png ">
+                                          </li>
+                                          <li class="div-li " style="padding-right:7% ">
+                                                <p style="font-size:20px;padding-left:10px ">Playing games</p>
+                                          </li>
+                                    </div>
                               </ul>
                         </div>
                   </div>
-                  <div class="row" style="padding-top:3%;padding-bottom:3%">
-                        <div class="col-12">
-                              <p style="font-size:25px">Cont<span>act</span></p>
+                  <div class="row " style="padding:3%;background-color:#f2f2f2">
+                        <div class="col-12 ">
+                              <p style="font-size:25px ">Cont<span>act</span></p>
                         </div>
-                        <div class="col-6">
-                              <p style="font-size:15px"><b>G.Maneesh Reddy</b></p>
-                              <p style="font-size:15px"><b>+91-9010028459</b></p>
-                              <p style="font-size:15px"><b>gorantimaneeshreddy@gmail.com</b></p>
+                        <div class="col-12 col-md-6 ">
+                              <p style="font-size:15px "><b>G.Maneesh Reddy</b></p>
+                              <p style="font-size:15px "><b>+91-9010028459</b></p>
+                              <p style="font-size:15px "><b>gorantimaneeshreddy@gmail.com</b></p>
                         </div>
-                        <div class="col-6" style="text-align:center">
-                              <p style="font-size:15px;color:blue"><b>Follow me on</b></p>
-                              <img style="width:10%" src="static/Social Icons/facebook.svg">
-                              <p style="padding-left:5%;display:inline-block"></p>
-                              <img style="width:10%" src="static/Social Icons/instagram.svg">
+                        <div class="col-12 col-md-6" style="text-align:center ">
+                              <p style="font-size:15px;color:blue "><b>Follow me on</b></p>
+                              <img style="width:10% " src="static/Social Icons/facebook.svg ">
+                              <p style="padding-left:5%;display:inline-block "></p>
+                              <img style="width:10% " src="static/Social Icons/instagram.svg ">
                         </div>
                   </div>
             </div>
