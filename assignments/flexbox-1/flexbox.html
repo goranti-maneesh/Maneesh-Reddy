@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Flexbox</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" type="text/css" href="flexbox.css" />
+    <style type="text/css">
+      .flexbox {
+        display: flex;
+        height: 500px;
+      }
+
+      .box {
+        height: 100%;
+        width: 85px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .a {
+        background-color: #0066cc;
+      }
+
+      .b {
+        background-color: #993366;
+      }
+
+      .c {
+        background-color: #ff9900;
+      }
+
+      .d {
+        background-color: #00cc99;
+      }
+
+      .imga {
+        height: 70px;
+        width: 75px;
+      }
+
+      .imgb {
+        height: 100px;
+        width: 85px;
+      }
+
+      .imgc {
+        height: 50px;
+        width: 75px;
+      }
+
+      .imgd {
+        height: 100px;
+        width: 85px;
+      }
+
+      @media screen and (min-width: 756px) {
+        .imga {
+          height: 60px;
+          width: 65px;
+        }
+
+        .imgb {
+          height: 90px;
+          width: 75px;
+        }
+
+        .imgc {
+          height: 40px;
+          width: 65px;
+        }
+
+        .imgd {
+          height: 90px;
+          width: 75px;
+        }
+        .box {
+          width: 100px;
+        }
+        .display {
+          height: 400px;
+        }
+      }
+
+      @media screen and (min-width: 1024px) {
+        .box {
+          width: 140px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="flexbox">
+      <div class="box a">
+        <img class="imga" src="assets/HTML5_logo.png" alt="html_logo">
+      </div>
+      <div class="box b">
+        <img class="imgb" src="assets/CSS_logo.svg" alt="CSS_logo">
+      </div>
+      <div class="box c">
+        <img class="imgc" src="assets/bootstrap_logo.png" alt="Bootstrap_logo">
+      </div>
+      <div class="box d">
+        <img class="imgd" src="assets/js_logo.png" alt="JS_logo">
+      </div>
+    </div>
+  </body>
+
+</html>
