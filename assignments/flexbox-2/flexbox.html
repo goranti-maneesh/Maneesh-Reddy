@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Flexbox</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" type="text/css" href="flexbox.css" />
+    <style type="text/css">
+      .flexbox {
+        display: flex;
+        height: 25px;
+        width: 300px;
+      }
+
+      .twitter-styles {
+        height: 50px;
+        border-radius: 100%;
+        margin-top: 20px;
+        margin-right: 10px;
+      }
+
+      .a {
+        align-items: baseline;
+        padding-top: 0px;
+      }
+
+      .tick {
+        width: 20px;
+      }
+
+      .drop_down {
+
+        padding-left: 135px;
+      }
+
+      .last-line {
+        justify-content: space-between;
+        width: 380px;
+      }
+
+      .numbers {
+        font-size: 15px;
+        color: grey;
+        padding-left: 10px;
+      }
+
+      .message {
+        align-items: center;
+        padding-right: 15px;
+      }
+
+      .twitter {
+        font-size: 20px;
+        font-weight: bold;
+        display: inline-block;
+      }
+
+      .its-color {
+        color: grey;
+      }
+
+      @media screen and (min-width: 756px) {
+        .flexbox {
+          display: flex;
+          height: 25px;
+        }
+
+        .twitter-styles {
+          height: 45px;
+          border-radius: 100%;
+          margin-top: 17px;
+          margin-right: 10px;
+        }
+        .tick {
+          height: 20px;
+        }
+        .a {
+          align-items: baseline;
+          padding-top: 0px;
+        }
+
+        .b {
+          align-self: flex-end;
+          display: block;
+        }
+
+        .drop_down {
+          padding-left: 670px;
+          height: 20px;
+        }
+
+        .last-line {
+          justify-content: space-between;
+          width: 700px;
+        }
+
+        .numbers {
+          font-size: 12px;
+          color: grey;
+          padding-left: 10px;
+        }
+
+        .message {
+          align-items: center;
+          padding-right: 15px;
+        }
+        .twitter {
+          font-size: 17px;
+        }
+
+        .its-color {
+          color: grey;
+        }
+        .symbols {
+          height: 20px;
+        }
+      }
+
+      @media screen and (min-width:1024px) {
+        .symbols-desktop {}
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="flexbox">
+      <div>
+        <img class="twitter-styles" src="assets/twitter.jpg" alt="Twitter_logo">
+      </div>
+      <div>
+        <div class="flexbox a">
+          <p class="twitter">
+            Twitter
+          </p>
+          <img class="tick" src="assets/tick.svg" alt="Tick_logo">
+          <p class="twitter its-color">
+            &nbsp;@Twitter&nbsp;.&nbsp;Jan&nbsp;1
+          </p>
+          <img class="drop_down" src="assets/drop_down.svg">
+        </div>
+
+        <div class="b">
+          <p class="twitter its-color">
+            New&nbsp;decade,&nbsp;drink&nbsp;water
+          </p>
+        </div>
+        <div class="flexbox last-line">
+          <div class="flexbox message">
+            <img class="symbols" src="assets/message.svg" alt="Message_logo">
+            <p class="numbers">13.5K</p>
+          </div>
+          <div class="flexbox message">
+            <img class="symbols" src="assets/retweet.svg" alt="Retweet_logo">
+            <p class="numbers">290.8K</p>
+          </div>
+          <div class="flexbox message">
+            <img class="symbols" src="assets/like.svg" alt="Like_logo">
+            <p class="numbers">943.1K</p>
+          </div>
+          <img class="symbols" src="assets/share.svg" alt="Share_logo">
+          <!--<img class="symbols-desktop" src="assets/share_desktop.svg" alt="Share_logo">-->
+        </div>
+      </div>
+    </div>
+  </body>
+
+</html>
