@@ -9,8 +9,6 @@
     <style type="text/css">
       .flexbox {
         display: flex;
-        height: 25px;
-        width: 300px;
       }
 
       .twitter-styles {
@@ -20,23 +18,30 @@
         margin-right: 10px;
       }
 
+      .items {
+        flex-grow: 1;
+      }
+
       .a {
-        align-items: baseline;
-        padding-top: 0px;
+        flex-grow: 1;
+      }
+
+      .b {
+        margin-top: -20px;
+        font-size: 18px;
       }
 
       .tick {
         width: 20px;
+        margin-right: 5px;
       }
 
       .drop_down {
-
-        padding-left: 135px;
+        width: 15px;
       }
 
       .last-line {
         justify-content: space-between;
-        width: 380px;
       }
 
       .numbers {
@@ -53,17 +58,34 @@
       .twitter {
         font-size: 20px;
         font-weight: bold;
+        margin-right: 5px;
         display: inline-block;
+
       }
 
       .its-color {
         color: grey;
       }
 
-      @media screen and (min-width: 756px) {
+      .justify {
+        flex-grow: 1;
+      }
+
+      .inline {
+        display: inline-block;
+      }
+
+      .symbols-desktop {
+        display: none;
+      }
+
+      @media (min-width: 756px) {
         .flexbox {
           display: flex;
-          height: 25px;
+
+        }
+        .a {
+          flex-grow: 1;
         }
 
         .twitter-styles {
@@ -72,27 +94,9 @@
           margin-top: 17px;
           margin-right: 10px;
         }
-        .tick {
-          height: 20px;
-        }
-        .a {
-          align-items: baseline;
-          padding-top: 0px;
-        }
-
-        .b {
-          align-self: flex-end;
-          display: block;
-        }
 
         .drop_down {
-          padding-left: 670px;
-          height: 20px;
-        }
-
-        .last-line {
-          justify-content: space-between;
-          width: 700px;
+          /*padding-left: 670px;*/
         }
 
         .numbers {
@@ -115,10 +119,22 @@
         .symbols {
           height: 20px;
         }
+        .symbols-desktop {
+          display: none;
+        }
+        .last-line {
+          width: 700px;
+        }
       }
 
-      @media screen and (min-width:1024px) {
-        .symbols-desktop {}
+      @media (min-width:1024px) {
+        .symbols-desktop {
+          display: flex;
+          width: 20px;
+        }
+        .d {
+          display: none;
+        }
       }
     </style>
   </head>
@@ -128,40 +144,48 @@
       <div>
         <img class="twitter-styles" src="assets/twitter.jpg" alt="Twitter_logo">
       </div>
-      <div>
-        <div class="flexbox a">
-          <p class="twitter">
-            Twitter
+
+
+      <div class="items">
+        <div class="flexbox justify">
+          <p class="twitter inline">Twitter
           </p>
           <img class="tick" src="assets/tick.svg" alt="Tick_logo">
-          <p class="twitter its-color">
-            &nbsp;@Twitter&nbsp;.&nbsp;Jan&nbsp;1
+          <p class="twitter its-color inline a"> @Twitter . Jan 1
           </p>
           <img class="drop_down" src="assets/drop_down.svg">
         </div>
 
+
         <div class="b">
-          <p class="twitter its-color">
-            New&nbsp;decade,&nbsp;drink&nbsp;water
-          </p>
+          New decade, drink water
         </div>
+
+
+
         <div class="flexbox last-line">
           <div class="flexbox message">
             <img class="symbols" src="assets/message.svg" alt="Message_logo">
             <p class="numbers">13.5K</p>
           </div>
+
           <div class="flexbox message">
             <img class="symbols" src="assets/retweet.svg" alt="Retweet_logo">
             <p class="numbers">290.8K</p>
           </div>
+
           <div class="flexbox message">
             <img class="symbols" src="assets/like.svg" alt="Like_logo">
             <p class="numbers">943.1K</p>
           </div>
-          <img class="symbols" src="assets/share.svg" alt="Share_logo">
-          <!--<img class="symbols-desktop" src="assets/share_desktop.svg" alt="Share_logo">-->
+
+          <img class="symbols d" src="assets/share.svg" alt="Share_logo">
+          <img class="symbols-desktop" src="assets/share_desktop.svg" alt="Share_logo">
         </div>
+
       </div>
+
+
     </div>
   </body>
 

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <link rel="stylesheet" href="../bootstrap/bootstrap.min.css" />
+        <script src="../bootstrap/jquery.min.js"></script>
+        <script src="../bootstrap/popper.min.js"></script>
+        <script src="../bootstrap/bootstrap.min.js"></script>
+        <style type="text/css">
+            .flexbox {
+                display: flex;
+                border: 2px solid black;
+                background-color: yellow;
+                margin-bottom: 0px;
+                padding-bottom: 0px;
+            }
+
+            .flexbox1 {
+                display: flex;
+                margin-bottom: 0px;
+            }
+
+            .get_gmail {
+                flex-grow: 1;
+                display: flex;
+                padding-top: 30px;
+                padding-left: 10px;
+                border-bottom: 1px solid lightgrey;
+                align-items: baseline;
+            }
+
+            .sign-in {
+                padding-top: 20px;
+                padding-bottom: 20px;
+                font-size: 14px;
+                color: grey;
+                border-bottom: 1px solid lightgrey;
+                background-color: yellow;
+                border: 2px solid blue;
+            }
+
+            .get-more-mobile {
+                padding: 30px;
+                text-align: center;
+
+            }
+
+            .more-secure-mobile {
+                font-size: 13px;
+                padding-left: 20px;
+                padding-right: 20px;
+                text-align: center;
+            }
+
+            .landing-page-mobile {
+                /*text-align: center;*/
+                width: 300px;
+            }
+
+            .playstore {
+                width: 100px;
+            }
+
+            .experience-image-mobile {
+                padding-top: 30px;
+                padding-bottom: 30px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="flexbox">
+            <div class="get_gmail">
+                <img style="width:35px;height:20px" src="assets/logo-gmail.png" alt="gmail">
+                <p style="padding-left:5px;font-size:20px">Gmail</p>
+            </div>
+            <div style="padding-top:20px;padding-right:10px;border-bottom: 1px solid lightgrey">
+                <button type="button" class="btn btn-primary">Get Gmail</button>
+            </div>
+        </div>
+        <div class="flexbox1">
+            <p class="sign-in" style="padding-left:20px;flex-grow:1;">For Work</p>
+            <p class="sign-in" style="padding-right:20px">Sign in</p>
+        </div>
+        <div style="text-align:center;background-color:#f2f2f2;border:2px solid black;margin-top:0px">
+            <h3 class="get-more-mobile">Get more done with Gmail</h3>
+            <p class="more-secure-mobile">Now more secure, smarter and easier to use--helping you save time and do more with your inbox</p>
+            <img class="landing-page-mobile" src="assets/landing-page-image-mobile.png" alt="inbox">
+            <div style="padding:30px">
+                <button type="button" class="btn btn-primary">Get mail</button>
+            </div>
+        </div>
+        <div style="text-align:center">
+            <h3 class="get-more-mobile">Experience Gmail on any device</h3>
+            <p class="more-secure-mobile">The ease & amplicity of Gmail, wherever you are</p>
+            <div style="padding-top:20px">
+                <img class="playstore" src="assets/google-playstore.png" alt="playstore">
+                <img class="playstore" src="assets/app-store.png" alt="app-store">
+            </div>
+            <div class="experience-image-mobile">
+                <img style="width:100%" src="assets/experience-image-mobile-desktop.png" alt="experience image">
+            </div>
+        </div>
+        <div style="text-align:center;background-color:#f2f2f2;">
+            <h3 class="get-more-mobile">Stay organised instantly</h3>
+            <p class="more-secure-mobile">See what's new at a glance and decide what you want to read and respond to</p>
+            <img class="landing-page-mobile" src="assets/stay-organised-instantly-mobile.png" alt="stay organised">
+        </div>
+    </body>
+
+</html>
