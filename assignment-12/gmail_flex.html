@@ -38,20 +38,23 @@
 
             .get-more-mobile {
                 padding: 30px;
-                text-align: center;
+
 
             }
 
             .more-secure-mobile {
                 font-size: 13px;
-                padding-left: 20px;
-                padding-right: 20px;
-                text-align: center;
+                padding-left: 30px;
+                padding-right: 30px;
             }
 
             .landing-page-mobile {
                 /*text-align: center;*/
                 width: 300px;
+            }
+
+            .landing-page-desktop {
+                display: none;
             }
 
             .playstore {
@@ -85,6 +88,127 @@
                 padding-bottom: 15px;
                 padding-top: 10px;
             }
+
+            .display-none-mobile {
+                display: none;
+            }
+
+            .background-color {
+                background-color: #f2f2f2;
+            }
+
+            .last-gmail {
+                width: 45px;
+                padding-top: 25px;
+                padding-bottom: 25px;
+            }
+
+            .footer-tab {
+                display: none;
+            }
+
+            @media screen and (max-width: 576px) {
+                .text-align {
+                    text-align: center;
+                }
+            }
+
+            @media screen and (min-width:756px) {
+                .display-none-mobile {
+                    display: flex;
+                }
+                .display-none-tab {
+                    display: none
+                }
+                .for-work-tab {
+                    width: 40%;
+                    justify-content: space-between;
+                }
+                .gmail-flex-gror-tab {
+                    flex-grow: 1;
+                }
+                /*.text-align {
+                    text-align: none;
+                }*/
+                .landing-page-mobile {
+                    /*text-align: center;*/
+                    width: 300px;
+                    display: none;
+                }
+                .landing-page-desktop {
+                    display: flex;
+
+                }
+                .flex-mobile {
+                    display: flex;
+                    align-items: center;
+                }
+                .width-tab {
+                    width: 50%;
+                }
+                .tab-padding-top {
+                    padding-top: 40px;
+                }
+                .playstore-text-align {
+                    text-align: center;
+                    padding-top: 50px;
+                }
+                .playstore {
+                    width: 160px;
+                    padding-bottom: 50px;
+                }
+                .playstore-tab {
+                    margin-right: 5px;
+                }
+                .appstore-tab {
+                    margin-left: 5px;
+                }
+                .side-by-side-tab {
+                    width: 48%;
+                    margin: 5px;
+                }
+                .stay-never-tab {
+                    display: flex;
+                }
+                .stay-tab-padding {
+                    padding-top: 60px;
+                }
+                .flex-tab {
+                    display: flex;
+                    align-items: center;
+                    padding-top: 110px;
+                    padding-bottom: 130px;
+                }
+                .last-gmail-tab {
+                    margin: 85px;
+                }
+                .last-gmail {
+                    width: 75px;
+                }
+                .last-create-account-tab {
+                    display: flex;
+                    justify-content: center;
+                }
+                .get-started-tab {
+                    margin-bottom: 30px;
+                    padding-top: 30px;
+                }
+                .privacy {
+                    display: flex;
+                    justify-content: space-around;
+                }
+                .footer-mobile {
+                    display: none;
+                }
+                .footer-tab {
+                    background-color: #f2f2f2;
+                }
+                .privacy-tab {
+                    display: flex;
+                    width: 80%;
+                    justify-content: space-between;
+                }
+            }
         </style>
     </head>
 
@@ -93,83 +217,131 @@
             <div class="flexbox">
                 <div class="get_gmail">
                     <img style="width:30px;" src="assets/logo-gmail.png" alt="gmail">
-                    <p style="padding-left:5px;font-size:20px">Gmail</p>
+                    <p style="padding-left:5px;font-size:20px" class="gmail-flex-gror-tab">Gmail</p>
+                    <div class="flexbox for-work-tab">
+                        <p class="display-none-mobile">For Work</p>
+                        <p class="display-none-mobile">Sign in</p>
+                        <div class="display-none-mobile">
+                            <button type="button" class="btn btn-primary">Create an account</button>
+                        </div>
+                    </div>
                 </div>
-                <div style="padding-top:20px;padding-right:10px;border-bottom: 1px solid lightgrey">
+                <div style="padding-top:20px;padding-right:10px;border-bottom: 1px solid lightgrey" class="display-none-tab">
                     <button type="button" class="btn btn-primary">Get Gmail</button>
                 </div>
             </div>
-            <div class="flexbox1" style="box-shadow: 5px 10px 8px #888888;">
-                <div class="sign-in" style="padding-left:20px;flex-grow:1;">For Work</div>
-                <div class="sign-in" style="padding-right:20px">Sign in</div>
+
+            <div class="flexbox1" style="box-shadow: 5px 10px 8px #888888;" class="display-none-tab">
+                <div class="sign-in display-none-tab" style="padding-left:20px;flex-grow:1;">For Work</div>
+                <div class="sign-in display-none-tab" style="padding-right:20px">Sign in</div>
 
             </div>
-            <div style="text-align:center;background-color:#f2f2f2;">
-                <h3 class="get-more-mobile">Get more done with Gmail</h3>
-                <p class="more-secure-mobile">Now more secure, smarter and easier to use--helping you save time and do more with your inbox</p>
+            <div class="text-align background-color flex-mobile">
+                <div class="width-tab">
+                    <h3 class="get-more-mobile">Get more done with Gmail</h3>
+                    <p class="more-secure-mobile">Now more secure, smarter and easier to use--helping you save time and do more with your inbox</p>
+                    <div class="display-none-mobile" style="padding-left:30px">
+                        <button type="button" class="btn btn-primary">Create an account</button>
+                    </div>
+                </div>
                 <img class="landing-page-mobile" src="assets/landing-page-image-mobile.png" alt="inbox">
+                <img class="landing-page-desktop width-tab tab-padding-top" src="assets/landing-page-image-desktop.png" alt="inbox">
                 <div style="padding:30px">
-                    <button type="button" class="btn btn-primary">Get mail</button>
+                    <button type="button" class="btn btn-primary display-none-tab">Get mail</button>
                 </div>
             </div>
-            <div style="text-align:center">
+            <div class="text-align playstore-text-align">
                 <h3 class="get-more-mobile">Experience Gmail on any device</h3>
                 <p class="more-secure-mobile">The ease & amplicity of Gmail, wherever you are</p>
                 <div style="padding-top:20px">
-                    <img class="playstore" src="assets/google-playstore.png" alt="playstore">
-                    <img class="playstore" src="assets/app-store.png" alt="app-store">
+                    <img class="playstore playstore-tab" src="assets/google-playstore.png" alt="playstore">
+                    <img class="playstore appstore-tab" src="assets/app-store.png" alt="app-store">
                 </div>
                 <div class="experience-image-mobile">
                     <img style="width:100%" src="assets/experience-image-mobile-desktop.png" alt="experience image">
                 </div>
             </div>
-            <div style="text-align:center;background-color:#f2f2f2;margin:10px">
-                <h3 class="get-more-mobile">Stay organised instantly</h3>
-                <p class="more-secure-mobile">See what's new at a glance and decide what you want to read and respond to</p>
-                <img class="landing-page-mobile" src="assets/stay-organised-instantly-mobile.png" alt="stay organised">
+            <div class="stay-never-tab">
+                <div class="text-align background-color side-by-side-tab" style="margin:10px">
+                    <h3 class="get-more-mobile stay-tab-padding">Stay organised instantly</h3>
+                    <p class="more-secure-mobile">See what's new at a glance and decide what you want to read and respond to</p>
+                    <img class="landing-page-mobile" src="assets/stay-organised-instantly-mobile.png" alt="stay organised">
+                    <div style="padding-top:40px;padding-bottom:80px;">
+                        <img class="landing-page-desktop tab-padding-top" style="width:100%" src="assets/stay-organised-instantly-desktop.png" alt="stay organised">
+                    </div>
+                </div>
+                <div class="text-align background-color side-by-side-tab" style="margin:10px">
+                    <h3 class="get-more-mobile stay-tab-padding">Never drop the ball</h3>
+                    <p class="more-secure-mobile">Get nudges that remaind you to follow up and respond to messages, so that nothing slips through the cracks.</p>
+                    <img class="landing-page-mobile" src="assets/never-drop-the-ball-mobile.png" alt="never drop th ball">
+                    <div style="padding-top:40px;padding-bottom:80px;">
+                        <img class="landing-page-desktop tab-padding-top" style="width:100%" src="assets/never-drop-the-ball-desktop.png" alt="never drop th ball">
+                    </div>
+                </div>
             </div>
-            <div style="text-align:center;background-color:#f2f2f2;margin:10px">
-                <h3 class="get-more-mobile">Never drop the ball</h3>
-                <p class="more-secure-mobile">Get nudges that remaind you to follow up and respond to messages, so that nothing slips through the cracks.</p>
-                <img class="landing-page-mobile" src="assets/never-drop-the-ball-mobile.png" alt="never drop th ball">
+            <div class="text-align flex-tab">
+                <div style="width:50%">
+                    <h3 class=" get-more-mobile ">Take right action from the inbox</h3>
+                    <p class="more-secure-mobile ">View attachments, RSVP to events, snooze messages and more without opening any emails.</p>
+                </div>
+                <img class="landing-page-mobile " src="assets/take-action-mobile.png " alt="take action">
+                <img class="landing-page-desktop width-tab tab-padding-top" style="width:50%;height:40%;" src="assets/take-action-desktop.png" alt="take action">
             </div>
-            <div style="text-align:center;">
-                <h3 class=" get-more-mobile ">Take right action from the inbox</h3>
-                <p class="more-secure-mobile ">View attachments, RSVP to events, snooze messages and more without opening any emails.</p>
-                <img class="landing-page-mobile " src="assets/take-action-mobile.png " alt="never drop th ball ">
-            </div>
-            <div style="text-align:center;background-color:#f2f2f2">
-                <h3 class="get-more-mobile">Avoid suspicious emails</h3>
-                <p class="more-secure-mobile">Gmail blocks 99.9% of dangerous emails before they reach you. If we think something seems phish-y, you'll get a warning</p>
+            <div class="text-align background-color flex-tab">
+                <div style="width:50%">
+                    <h3 class="get-more-mobile">Avoid suspicious emails</h3>
+                    <p class="more-secure-mobile">Gmail blocks 99.9% of dangerous emails before they reach you. If we think something seems phish-y, you'll get a warning</p>
+                </div>
                 <img class="landing-page-mobile" src="assets/avoid-suspicious-emails-mobile.png" alt="avoid suspicious emails">
+                <img class="landing-page-desktop width-tab tab-padding-top" style="width:50%;height:40%;order:-1" src="assets/avoid-suspicious-emails-desktop.png" alt="avoid suspicious emails">
             </div>
-            <div style="padding:30px;text-align:center">
-                <img style="width:45px;padding-top:25px;padding-bottom:25px;" src="assets/logo-gmail.png" alt="gmail">
-                <h4 style="padding-bottom:20px">Get started with Gmail</h4>
-                <button type="button" class="btn btn-primary">Get Gmail</button>
+            <div style="padding:30px;text-align:center" class="text-align last-gmail-tab">
+                <img class="last-gmail" src="assets/logo-gmail.png " alt="gmail ">
+                <h4 style="padding-bottom:20px" class="get-started-tab">Get started with Gmail</h4>
+                <div class="display-none-tab">
+                    <button type="button " class="btn btn-primary ">Get Gmail</button>
+                </div>
+                <div class="display-none-mobile last-create-account-tab">
+                    <button type="button" class="btn btn-primary">Create an account</button>
+                </div>
             </div>
-            <div style="background-color:#f2f2f2;padding:5px">
-                <p class="google-footer">Google</p>
+            <div class="background-color footer-mobile" style="padding:5px ">
+                <p class="google-footer ">Google</p>
                 <div class="privacy">
-                    <p class="pp">Privacy</p>
-                    <p class="pp">Terms</p>
-                    <p class="pp">About Google</p>
-                    <p class="pp">Google Products</p>
-                    <p class="pp">Our policy</p>
+                    <p class="pp ">Privacy</p>
+                    <p class="pp ">Terms</p>
+                    <p class="pp ">About Google</p>
+                    <p class="pp ">Google Products</p>
+                    <p class="pp ">Our policy</p>
                 </div>
                 <div class="drop-down">
-                    <div class="flexbox">
-                        <img style="width:20px;height:20px" src="assets/question-mark.png" alt="question-mark">
-                        <p style="margin-left:5px;" class="pp">Help</p>
+                    <div class="flexbox ">
+                        <img style="width:20px;height:20px " src="assets/question-mark.png " alt="question-mark ">
+                        <p style="margin-left:5px; " class="pp ">Help</p>
                     </div>
                     <div style="margin-left:15%">
-                        <p class="pp">English(India)</p>
+                        <p class="pp ">English(India)</p>
                     </div>
                     <div>
                         <img src="assets/drop_down.svg" alt="drop-down">
                     </div>
                 </div>
             </div>
+            <!--<div class="footer-tab">-->
+            <p class="google-footer">Google</p>
+            <div class="privacy-tab">
+                <p class="pp ">Privacy</p>
+                <p class="pp ">Terms</p>
+                <p class="pp ">About Google</p>
+                <p class="pp ">Google Products</p>
+                <p class="pp ">Our policy</p>
+                <div class="flexbox">
+                    <img style="width:20px;height:20px " src="assets/question-mark.png " alt="question-mark ">
+                    <p class="pp ">Help</p>
+                </div>
+                <p class="pp ">English(India)</p>
+            </div>
+        </div>
         </div>
     </body>
 
