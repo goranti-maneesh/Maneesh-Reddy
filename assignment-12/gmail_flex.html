@@ -107,6 +107,10 @@
                 display: none;
             }
 
+            .flex-grow-english-mobile {
+                flex-grow: 1;
+            }
+
             @media screen and (max-width: 576px) {
                 .text-align {
                     text-align: center;
@@ -221,6 +225,9 @@
                 }
                 .footer-desktop {
                     display: none;
+                }
+                .footer-tab {
+                    display: flex;
                 }
             }
 
@@ -392,7 +399,7 @@
                         <img style="width:20px;height:20px " src="assets/question-mark.png " alt="question-mark ">
                         <p class="pp ">Help</p>
                     </div>
-                    <p class="pp">English(India)</p>
+                    <p class="pp flex-grow-english-mobile">English(India)</p>
                     <p class="dropdown-toggle"></p>
                 </div>
             </div>
