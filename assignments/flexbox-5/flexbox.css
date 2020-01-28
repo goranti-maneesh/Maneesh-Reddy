@@ -1,0 +1,31 @@
+body {
+  background-color: #e0e0e0;
+  margin: 0px;
+  font-family: sans-serif;
+}
+
+.flexbox {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.yellow {
+  background-color: orange;
+  height: 150px;
+  width: 500px;
+  flex-grow: 1;
+}
+
+.brown {
+  background-color: saddlebrown;
+  height: 150px;
+  width: 300px;
+  flex-grow: 1;
+}
+
+.green {
+  background-color: green;
+  height: 150px;
+  flex-grow: 1;
+  width: 300px;
+}
