@@ -113,6 +113,14 @@
                 }
             }
 
+            .footer-tab {
+                display: none;
+            }
+
+            .footer-desktop {
+                display: none;
+            }
+
             @media screen and (min-width:756px) {
                 .display-none-mobile {
                     display: flex;
@@ -209,7 +217,49 @@
                     justify-content: space-between;
                 }
                 .take-avoid-mobile {
-                    width: 50%;
+                    width: 50%
+                }
+                .footer-desktop {
+                    display: none;
+                }
+            }
+
+            @media screen and (min-width:1024px) {
+                .footer-desktop {
+                    display: flex;
+                    justify-content: space-around;
+                    padding-top: 25px;
+                    padding-bottom: 15px;
+                }
+                .footer-mobile {
+                    display: none;
+                }
+                .privacy-desktop {
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    width: 60%;
+                }
+                .help-desktop {
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    width: 20%;
+                }
+                .google-footer {
+                    font-size: 30px;
+                    padding-bottom: 10px
+                }
+                .same-line-desktop {
+                    padding-top: 10px;
+                }
+                .flexbox-privacy-desktop {
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                }
+                .ppp {
+                    padding-top: 7px;
                 }
             }
         </style>
@@ -326,25 +376,47 @@
                         <p class="pp ">English(India)</p>
                     </div>
                     <div>
-                        <img src="assets/drop_down.svg" alt="drop-down">
+                        <p class="dropdown-toggle"></p>
                     </div>
                 </div>
             </div>
-            <!--<div class="footer-tab">-->
-            <p class="google-footer">Google</p>
-            <div class="privacy-tab">
-                <p class="pp ">Privacy</p>
-                <p class="pp ">Terms</p>
-                <p class="pp ">About Google</p>
-                <p class="pp ">Google Products</p>
-                <p class="pp ">Our policy</p>
-                <div class="flexbox">
-                    <img style="width:20px;height:20px " src="assets/question-mark.png " alt="question-mark ">
-                    <p class="pp ">Help</p>
+            <div class="footer-tab">
+                <p class="google-footer">Google</p>
+                <div class="privacy-tab">
+                    <p class="pp ">Privacy</p>
+                    <p class="pp ">Terms</p>
+                    <p class="pp ">About Google</p>
+                    <p class="pp ">Google Products</p>
+                    <p class="pp ">Our policy</p>
+                    <div class="flexbox">
+                        <img style="width:20px;height:20px " src="assets/question-mark.png " alt="question-mark ">
+                        <p class="pp ">Help</p>
+                    </div>
+                    <p class="pp">English(India)</p>
+                    <p class="dropdown-toggle"></p>
                 </div>
-                <p class="pp ">English(India)</p>
             </div>
-        </div>
+            <div class="footer-desktop flexbox background-color">
+                <div class="flexbox privacy-desktop">
+                    <p style="font-size:25px">Google</p>
+                    <!--<div class="same-line-desktop flexbox-privacy-desktop">btn btn-secondary, type="button", data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" -->
+                    <p class="pp ppp">Privacy</p>
+                    <p class="pp ppp">Terms</p>
+                    <p class="pp ppp">About Google</p>
+                    <p class="pp ppp">Google Products</p>
+                    <p class="pp ppp">Our policy</p>
+                </div>
+                <div class="flexbox help-desktop">
+                    <div class="flexbox ppp">
+                        <img style="width:20px;height:20px " src="assets/question-mark.png " alt="question-mark ">
+                        <p class="pp ">Help</p>
+                    </div>
+                    <p class="pp ppp">English(India)</p>
+                </div>
+                <div style="padding-top:10px">
+                    <p class="dropdown-toggle"></p>
+                </div>
+            </div>
         </div>
     </body>
 
