@@ -217,7 +217,7 @@
                 }
                 .privacy-tab {
                     display: flex;
-                    width: 80%;
+                    width: 100%;
                     justify-content: space-between;
                 }
                 .take-avoid-mobile {
@@ -229,9 +229,15 @@
                 .footer-tab {
                     display: flex;
                 }
+                .mobile-dropdown {
+                    width: 20%;
+                    display: flex;
+                    justify-content: flex-end;
+                    padding-right: 20px;
+                }
             }
 
-            @media screen and (min-width:1024px) {
+            /*@media screen and (min-width:1024px) {
                 .footer-desktop {
                     display: flex;
                     justify-content: space-around;
@@ -268,7 +274,7 @@
                 .ppp {
                     padding-top: 7px;
                 }
-            }
+            }*/
         </style>
     </head>
 
@@ -388,25 +394,29 @@
                 </div>
             </div>
             <div class="footer-tab">
-                <p class="google-footer">Google</p>
-                <div class="privacy-tab">
-                    <p class="pp ">Privacy</p>
-                    <p class="pp ">Terms</p>
-                    <p class="pp ">About Google</p>
-                    <p class="pp ">Google Products</p>
-                    <p class="pp ">Our policy</p>
-                    <div class="flexbox">
-                        <img style="width:20px;height:20px " src="assets/question-mark.png " alt="question-mark ">
-                        <p class="pp ">Help</p>
+                <div style="width:100%;">
+                    <p class="google-footer">Google</p>
+                    <div class="privacy-tab">
+                        <p class="pp ">Privacy</p>
+                        <p class="pp ">Terms</p>
+                        <p class="pp ">About Google</p>
+                        <p class="pp ">Google Products</p>
+                        <p class="pp ">Our policy</p>
+                        <div class="flexbox">
+                            <img style="width:20px;height:20px " src="assets/question-mark.png " alt="question-mark ">
+                            <p class="pp ">Help</p>
+                        </div>
+                        <p class="pp">English(India)</p>
+                        <div class="mobile-dropdown">
+                            <p class="dropdown-toggle"></p>
+                        </div>
                     </div>
-                    <p class="pp flex-grow-english-mobile">English(India)</p>
-                    <p class="dropdown-toggle"></p>
                 </div>
             </div>
-            <div class="footer-desktop flexbox background-color">
+            <!--<div class="footer-desktop flexbox background-color">
                 <div class="flexbox privacy-desktop">
                     <p style="font-size:25px">Google</p>
-                    <!--<div class="same-line-desktop flexbox-privacy-desktop">btn btn-secondary, type="button", data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" -->
+                    <!--<div class="same-line-desktop flexbox-privacy-desktop">btn btn-secondary, type="button", data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" ->
                     <p class="pp ppp">Privacy</p>
                     <p class="pp ppp">Terms</p>
                     <p class="pp ppp">About Google</p>
@@ -423,7 +433,7 @@
                 <div style="padding-top:10px">
                     <p class="dropdown-toggle"></p>
                 </div>
-            </div>
+            </div>-->
         </div>
     </body>
 
