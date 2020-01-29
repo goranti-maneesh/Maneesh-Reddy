@@ -3,6 +3,64 @@ body {
   margin: 0px;
   font-family: sans-serif;
 }
+
 .flexbox {
   display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.header {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 900px;
+  color: white;
+  background-color: orange;
+  flex-grow: 1;
+}
+
+.navigation {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 200px;
+  color: white;
+  background-color: #055605;
+  flex-grow: 1;
+}
+
+.main {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 800px;
+  background-color: white;
+  flex-grow: 1;
+}
+
+.article {
+  border: 2px solid black;
+  flex-grow: 1;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+.section {
+  border: 2px dotted black;
+  margin: 10px;
+  padding: 30px;
+}
+
+.footer {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 800px;
+  color: white;
+  background-color: #afb0b1;
+  flex-grow: 1;
+}
+
+.total-main {
+  background-color: white;
 }
