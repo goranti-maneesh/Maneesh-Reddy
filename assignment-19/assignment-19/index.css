@@ -27,12 +27,28 @@ body {
       display: flex;
       flex-direction: column;
       justify-content: center;
+      flex-grow: 1;
 }
 
 .phn-num {
       display: flex;
       flex-direction: row;
       align-items: baseline;
+      flex-grow: 1;
+}
+
+.sim-logo {
+      display: flex;
+}
+
+.dropright {
+      border: 1px solid #f2f2f2;
+      height: 20px;
+      width: 20px;
+      text-align: center;
+      background-color: #f2f2f2;
+      border-radius: 100%;
+      margin-right: 20px;
 }
 
 .keyboard {
@@ -88,7 +104,7 @@ body {
 }
 
 .lastdot {
-      padding-left: 0px;
+      margin-left: 1px;
 }
 
 .dot {
