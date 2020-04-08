@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Bulb App</title>
+    <link rel="stylesheet" href="index.css" />
+    <script>
+      let bulb = 0;
+      let myfunction = () => {
+        let myImage = document.getElementById("img");
+        bulb += 1;
+        if ((bulb % 2) == 1) {
+          myImage.src = "assets/on.png";
+          document.body.appendChild(myImage);
+        }
+        else {
+          myImage.src = "assets/off.png";
+          document.body.appendChild(myImage);
+        }
+        console.log(myImage.src);
+      };
+    </script>
+  </head>
+
+  <body id="console-root">
+    <script src="https://tap.ibhubs.in/utils/console.js"></script>
+    <!-- Write your html code from here-->
+    <script>
+    </script>
+    <img id="img"> <button onclick=myfunction()>Click Me</button></img>
+  </body>
+
+</html>

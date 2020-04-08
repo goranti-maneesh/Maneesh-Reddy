@@ -1,0 +1,102 @@
+.buttons {
+      display: flex;
+}
+
+body {
+      display: flex;
+}
+
+.button {
+      width: 150px;
+      height: 30px;
+      border: 1px solid #45a8de;
+      margin-right: 10px;
+      margin-bottom: 20px;
+      font-size: 15px;
+      color: #326fd1;
+      border-radius: 5px;
+}
+
+.body {
+      display: flex;
+      flex-direction: column;
+      margin-top: 30px;
+      height: 100px;
+      width: 400px;
+}
+
+.main-body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 500px;
+      width: 1000px;
+}
+
+.input {
+      display: none;
+}
+
+.showBalance {
+      display: none;
+}
+
+.historyTable {
+      display: none;
+      text-align: center;
+}
+
+th,
+td {
+      border: 1px solid blue;
+}
+
+table {
+      border-collapse: collapse;
+}
+
+.input-tag-deposit {
+      width: 180px;
+      height: 20px;
+      border: 2px solid navy;
+      margin-right: 15px;
+      font-size: 15px;
+}
+
+.input-tag-withdraw {
+      width: 180px;
+      height: 20px;
+      border: 2px solid navy;
+      margin-right: 15px;
+      font-size: 15px;
+}
+
+.submit-button-withdraw {
+      width: 70px;
+      height: 30px;
+      background-color: #326fd1;
+      color: white;
+      border-radius: 5px;
+}
+
+.submit-button-deposit {
+      width: 70px;
+      height: 30px;
+      background-color: #326fd1;
+      color: white;
+      border-radius: 5px;
+}
+
+.withdraw-warning {
+      color: red;
+      font-size: 18px;
+      margin-top: 5px;
+}
+
+.depositTimer {
+      display: none;
+}
+
+.withdrawTimer {
+      display: none;
+}

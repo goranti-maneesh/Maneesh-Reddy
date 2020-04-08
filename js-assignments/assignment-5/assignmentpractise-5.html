@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+
+      <head>
+            <title>Practiseset-5</title>
+      </head>
+
+      <body id="console-root">
+            <p id="p1">Hello World</p>
+            <p id="p2">Hello Worldp2</p>
+            <script src="https://tap.ibhubs.in/utils/console.js"></script>
+            <script>
+                  document.getElementById("p2").style.color = "blue";
+                  document.getElementById("p2").style.fontSize = "30px";
+                  document.getElementById("p2").style.fontStyle = "Italiic";
+                  /*let firstNumber = 45;
+                  //console.log(outputAsEvenOrOdd) //question - 11
+                  let calculateGcd = (firstNumber, secondNumber) => {
+                        let GCD;
+                        let minNumber = (firstNumber < secondNumber) ? (firstNumber) : (secondNumber);
+                        for (let i = 1; i <= minNumber; i++) {
+                              if (firstNumber % i == 0 & secondNumber % i == 0) {
+                                    GCD = i;
+                              }
+                        }
+                        console.log(GCD);
+                  };
+                  let firstNumber = 16;
+                  let secondNumber = 88;
+                  calculateGcd(firstNumber, secondNumber);
+
+
+
+                  //question - 12
+                  let countNumberOfDigits = (givenNumber) => {
+                        let numberOfDigits = 0;
+                        for (let i = 0; givenNumber != 0; i++) {
+                              numberOfDigits += 1;
+                              givenNumber = parseInt(givenNumber / 10);
+                        }
+                        console.log(numberOfDigits);
+                  };
+                  let givenNumber = 2460;
+                  countNumberOfDigits(givenNumber);
+
+
+                  //question - 13
+                  let sumOfDigits = (inputForSumOfDigits) => {
+                        let sumOfDigitsOfInput = 0;
+                        for (let i = 0; inputForSumOfDigits != 0; i++) {
+                              sumOfDigitsOfInput = sumOfDigitsOfInput + (inputForSumOfDigits % 10);
+                              inputForSumOfDigits = parseInt(inputForSumOfDigits / 10);
+                        }
+                        console.log(sumOfDigitsOfInput);
+                  };
+                  let inputForSumOfDigits = 2467;
+                  sumOfDigits(inputForSumOfDigits);
+
+
+                  //question - 14
+                  let factorialOfNumber = (inputForFactorialNumber) => {
+                        let multiplicationUpToGivennumber = 1;
+                        for (let i = 1; i <= inputForFactorialNumber; i++) {
+                              multiplicationUpToGivennumber = multiplicationUpToGivennumber * i;
+                        }
+                        console.log(multiplicationUpToGivennumber);
+                  };
+                  let inputForFactorialNumber = 10;
+                  factorialOfNumber(inputForFactorialNumber);
+
+
+                  //question - 15
+                  let isLeapYear = (inputForLeapYear) => {
+                        if (inputForLeapYear % 100 == 0) {
+                              if (inputForLeapYear % 400 == 0) {
+                                    console.log("Leap year");
+                              }
+                              else {
+                                    console.log("not a leap year");
+                              }
+                        }
+                        else {
+                              if (inputForLeapYear % 4 == 0) {
+                                    console.log("Leap year");
+                              }
+                              else {
+                                    console.log("not a leap year");
+                              }
+                        }
+                  };
+                  let inputForLeapYear = 1997;
+                  isLeapYear(inputForLeapYear);
+
+
+                  //question - 16
+                  let isPerfectNumber = (inputForPerfectNumber) => {
+                        let sumOfMultiplesOfInputForPerfectNumber = 0;
+                        for (let i = 1; i <= (inputForPerfectNumber / 2); i++) {
+                              if (inputForPerfectNumber % i == 0) {
+                                    sumOfMultiplesOfInputForPerfectNumber = sumOfMultiplesOfInputForPerfectNumber + i;
+                              }
+                        }
+                        if (inputForPerfectNumber == sumOfMultiplesOfInputForPerfectNumber) {
+                              console.log("Perfect number");
+                        }
+                        else {
+                              console.log("Not a perfect number");
+                        }
+                  };
+                  let inputForPerfectNumber = 28;
+                  isPerfectNumber(inputForPerfectNumber);
+
+
+                  //question - 17
+                  let factorsOfANumber = (inputForFactorsOfANumber) => {
+                        let arrayOfMultiplesOfGivenInput = [];
+                        for (let i = 1; i <= inputForFactorsOfANumber; i++) {
+                              if (inputForFactorsOfANumber % i == 0) {
+                                    arrayOfMultiplesOfGivenInput.push(i);
+                              }
+                        }
+                        console.log(arrayOfMultiplesOfGivenInput);
+                  };
+                  let inputForFactorsOfANumber = 40;
+                  factorsOfANumber(inputForFactorsOfANumber);
+
+
+                  //question - 18 & 19
+                  let getSmallestNumberFromArray = (inputArrayForSmallestNumber) => {
+                        //console.log(inputArrayForSmallestNumber);
+                        inputArrayForSmallestNumber.sort(function(a, b) { return a - b });
+                        //console.log(inputArrayForSmallestNumber);
+                        inputArrayForSmallestNumber.reverse();
+                        console.log(inputArrayForSmallestNumber);
+                  };
+                  let inputArrayForSmallestNumber = [12, 19, 2, 25, 9, 1];
+                  getSmallestNumberFromArray(inputArrayForSmallestNumber);
+
+
+                  //question - 20
+                  let sumOfElements = (inputForSumOfElements) => {
+                        let sumOfInput = 0;
+                        let lengthOfInputForSumOfElements = inputForSumOfElements.length;
+                        for (let i = 0; i < lengthOfInputForSumOfElements; i++) {
+                              sumOfInput = sumOfInput + inputForSumOfElements[i];
+                        }
+                        console.log(sumOfInput);
+                  };
+                  let inputForSumOfElements = [15, 88, 10, 20, 34];
+                  sumOfElements(inputForSumOfElements);
+
+
+                  //question - 21 & 22
+                  let countNumberOfOddNumbers = (inputForCountNumberOfOddNumbers) => {
+                        let lengthOfInputForCountNumberOfOddNumbers = inputForCountNumberOfOddNumbers.length;
+                        let countOfOddNumbers = 0;
+                        for (let i = 0; i < lengthOfInputForCountNumberOfOddNumbers; i++) {
+                              if (inputForCountNumberOfOddNumbers[i] % 2 == 0) {
+                                    countOfOddNumbers = countOfOddNumbers + 1;
+                              }
+                        }
+                        console.log(countOfOddNumbers);
+                  };
+                  let inputForCountNumberOfOddNumbers = [15, 88, 10, 20, 34];
+                  countNumberOfOddNumbers(inputForCountNumberOfOddNumbers);
+
+
+
+                  //question - 23
+                  let isEmptyObject = (inputForIsEmptyObject) => {
+                        console.log(Object(inputForIsEmptyObject));
+                        console.log(Object.values(inputForIsEmptyObject));
+                  };
+                  let inputForIsEmptyObject = {
+                        name: "Maneesh",
+                        age: 22,
+                  };
+                  isEmptyObject(inputForIsEmptyObject);
+
+                  //question - 24
+                  let displayPropertyWithValue = (inputForDisplayPropertyWithValue) => {
+                        let lengthOfInputForDisplayPropertyWithValue = Object.keys(inputForDisplayPropertyWithValue).length;
+                        //alert(lengthOfInputForDisplayPropertyWithValue);
+                        for (let i = 0; i < lengthOfInputForDisplayPropertyWithValue; i++) {
+                              console.log(`${inputForDisplayPropertyWithValue[i]} ${inputForDisplayPropertyWithValue[i]}`);
+                        }
+                  };
+                  let inputForDisplayPropertyWithValue = {
+                        John: "software",
+                        Ann: "Hardware",
+                  };
+                  displayPropertyWithValue(inputForDisplayPropertyWithValue);
+
+
+
+                  const a = 0.5;
+                  //a = 6.7;
+                  alert(null === undefined);
+                  try {
+                        a = 9.6;
+                        //let string_value = answer;
+                        alert(a);
+                  }
+                  catch (e) {
+                        //alert(e);
+                        //return "Invalid expression";
+                        //return error
+                  }
+                  let myFunction = () => {
+                        let headingObject = document.getElementById("demo");
+                        headingObject.parentNode.removeChild(headingObject);
+                  };
+                  let anotherFunction = () => {
+                        let paraObject = document.getElementsByClassName("para");
+                        paraObject.parentNode.appendChild(paraObject);
+                  };*/
+                  let count = 0;
+                  let paraObject = document.getElementById("p3");
+                  let helloWorldFunction = () => {
+
+                        if (count % 2 == 0) {
+                              paraObject.parentNode.removeChild(paraObject);
+                              count = count + 1;
+                        }
+                        else {
+                              paraObject.parentNode.appendChild(paraObject);
+                              count = count + 1;
+                        }
+                  };
+            </script>
+            <h1 id="demo">My Page</h1>
+            <button onclick="myFunction()">Submit</button>
+            <p class="para">Maneesh</p>
+            <button onclick="anotherFunction()">click</button>
+
+            <p id="p3">Hello World</p>
+            <button onclick="helloWorldFunction()">Click Me</button>
+      </body>
+
+</html>
+<!--
+12,19,2,25,9,1
+15,88,10,20,34
+15,88,10,20,-34
+-->

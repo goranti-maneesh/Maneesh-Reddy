@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>ATM</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <div id="console-root"></div>
+    <div class="main-body">
+      <div>
+        <div class="body">
+          <div class="deposit-withdraw buttons">
+            <button class="deposit-button button" id="depositButton"><b>Deposit</b></button>
+            <button class="withdraw-button button" id="withdrawButton"><b>Withdraw</b></button>
+          </div>
+          <div class="show-balance-history buttons">
+            <button class="show-balance-button button" id="showBalanceButton"><b>Show Balance</b></button>
+            <button class="history-button button" id="historyButton"><b>History</b></button>
+          </div>
+        </div>
+        <div class="input" id="deposit">
+          <input class="input-tag-deposit" id="inputDeposit" type="text" placeholder="Deposit amount" />
+          <button class="submit-button-deposit" id="depositSubmitButton">Submit</button>
+        </div>
+        <div class="depositTimer" id="depositTimer">Time left:<span id="depositTimeLeft"></span></div>
+        <div class="input" id="withdraw">
+          <input class="input-tag-withdraw" id="inputWithdraw" type="text" placeholder="Withdraw amount" />
+          <button class="submit-button-withdraw" id="withdrawSubmitButton">Submit</button>
+        </div>
+        <div class="withdrawTimer" id="withdrawTimer">Time left:<span id="withdrawTimeLeft"></span></div>
+        <div class="withdraw-warning" id="withdrawWarning"></div>
+        <div class="showBalance" id="showBalance">Show balance: <b>Rs <span id="showBankBalance"></span>/-</b></div>
+        <table class="historyTable" id="table">
+          <tr>
+            <th><b>Transaction type</b></th>
+            <th><b>Amount in Rs</b></th>
+            <th><b>Balance in Rs</b></th>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <script src="https://tap.ibhubs.in/utils/console.js"></script>
+
+    <script src="index.js"></script>
+  </body>
+
+</html>

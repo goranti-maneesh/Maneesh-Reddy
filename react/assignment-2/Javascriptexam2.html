@@ -1,0 +1,47 @@
+<html>
+
+      <head>
+
+      </head>
+
+      <body>
+            <div id="console-root"></div>
+            <script src="https://tap.ibhubs.in/utils/console.js"></script>
+            <script>
+                  /*doubt1 let x = function y() {
+                                                                                                                                                                                                                                                                                                                                                            return 2022;
+                                                                                                                                                                                                                                                                                                                                                      }
+                                                                                                                                                                                                                                                                                                                                                      console.log(y())*/
+                  /* let p = new Promise(resolve => {
+                         reject("resolved")
+                   }).catch(error => console.log(error)).then(error => console.log(error))
+                   */
+                  function job() {
+                        return new Promise(function(reject, resolve) {
+                              resolve()
+                        })
+                  }
+                  let promise = job();
+
+                  promise.then(function() {
+                        console.log("success 1")
+                  }).catch(function() {
+                        console.log("error 1")
+                  }).then(function() {
+                        console.log("success 2")
+                        throw "sowji";
+                  }).catch(function() {
+                        console.log("error 2")
+                  }).catch(function() {
+                        console.log("error ochhh")
+                  }).then(function() {
+                        console.log(" success 3")
+                  }).then(function() {
+                        console.log("success 4")
+                  }).then(function() {
+                        console.log("success 5")
+                  })
+            </script>
+      </body>
+
+</html>

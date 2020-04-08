@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css" />
+  </head>
+
+  <body id="console-root">
+    <script src="https://tap.ibhubs.in/utils/console.js"></script>
+    <script src="calculator.js"></script>
+
+    <!-- Write your html code from here-->
+
+    <!--<button onclick="onClickShowOutput()">Show Output</button>-->
+    <div style="margin-top:15px">
+      <div id="output">0</div>
+      <div class="main">
+        <div class="column-1 padding-left">
+          <button onclick="EnterValue('+')" class="values operator padding-top">+</button>
+          <button onclick="EnterValue('7')" class="values">7</button>
+          <button onclick="EnterValue('4')" class="values">4</button>
+          <button onclick="EnterValue('1')" class="values">1</button>
+          <button onclick="EnterValue('0')" class="values padding-bottom">0</button>
+        </div>
+        <div class="column-1">
+          <button onclick="EnterValue('-')" class="values operator padding-top">-</button>
+          <button onclick="EnterValue('8')" class="values">8</button>
+          <button onclick="EnterValue('5')" class="values">5</button>
+          <button onclick="EnterValue('2')" class="values">2</button>
+          <button onclick="EnterValue('.')" class="values padding-bottom">.</button>
+        </div>
+        <div class="column-1">
+          <button onclick="EnterValue('*')" class="values operator padding-top">&times</button>
+          <button onclick="EnterValue('9')" class="values">9</button>
+          <button onclick="EnterValue('6')" class="values">6</button>
+          <button onclick="EnterValue('3')" class="values">3</button>
+          <button onclick="AC()" class="values AC padding-bottom">AC</button>
+        </div>
+        <div class="column-4">
+          <button onclick="EnterValue('/')" class="values operator padding-top">÷</button>
+          <button onclick="equals()" class="values equal padding-bottom">=</button>
+        </div>
+      </div>
+    </div>
+  </body>
+
+</html>

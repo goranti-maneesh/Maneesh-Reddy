@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="sign-up.css" />
+  </head>
+
+  <body>
+    <div id="console-root"></div>
+    <script src="https://tap.ibhubs.in/utils/console.js"></script>
+    <!-- Write your html code from here-->
+    <div class="top-margin">
+      <div style="font-size:14px">Select your favourite colors</div>
+      <div class="button-parent">
+        <button id="button-one-color" class="button-one"></button>
+      </div>
+      <div class="button-parent">
+        <button id="button-two-color" class="button-two"></button>
+      </div>
+    </div>
+    <div class="outer-margin">
+      <div class="body-top">
+        <div class="sign-up margin"><b>Sign Up</b></div>
+        <div class="fill-the-form margin">Please fill in this form to create an account</div>
+      </div>
+      <div class="underline"></div>
+      <div class="padding"></div>
+      <div class="body-bottom">
+        <div class="required-names">
+          <div class="margin">
+            <input type="text" size="30" id="first-name" class="text-column" placeholder="First Name" />
+            <div id="first-name-required" class="required-things"></div>
+          </div>
+          <div class="margin">
+            <input type="text" size="30" id="last-name" class="text-column" placeholder="Last Name" />
+            <div id="last-name-required" class="required-things"></div>
+          </div>
+        </div>
+        <div class="margin">
+          <input type="text" size="64" id="mobile-number" class="text-column" placeholder="Mobile Number" />
+          <div id="mobile-number-required" class="required-things"></div>
+        </div>
+        <div class="margin">
+          <input type="text" size="64" id="email" class="text-column" placeholder="Email" />
+          <div id="email-required" class="required-things"></div>
+        </div>
+        <div class="margin">
+          <input type="password" size="64" id="password" class="text-column" placeholder="Password" />
+          <div id="password-required" class="required-things"></div>
+        </div>
+        <div class="margin">
+          <input type="password" size="64" id="confirm-password" class="text-column" placeholder="Confirm Password" />
+          <div id="confirm-password-required" class="required-things"></div>
+        </div>
+
+        <div class="gender fill-the-form margin">
+          <div>
+            <div>Select your gender</div>
+            <div id="gender" class="required-things"></div>
+          </div>
+          <div>
+            <input type="radio" id="male" name="gender" value="male">
+            <lable>Male</lable>
+          </div>
+          <div>
+            <input type="radio" id="female" name="gender" value="female">
+            <lable>Female</lable>
+          </div>
+          <div>
+            <input type="radio" id="other" name="gender" value="other">
+            <lable>Other</lable>
+          </div>
+        </div>
+        <div class="branch-dob margin">
+          <div class="department">
+            <div class="fill-the-form branch-dob-padding">Select your branch</div>
+            <div id="branch-padding">
+              <!--            <select id="mySelect">-->
+              <!--<option value="EEE">EEE</option>-->
+              <!--<option value="ECE">ECE</option>-->
+              <!--<option value="CSE">CSE</option>-->
+              <!--<option value="MECH">MECH</option>-->
+              <!--<option value="CIVIL">CIVIL</option>-->
+              <!--</select>-->
+              <select id="mySelect">
+    <option value="EEE">EEE</option>
+    <option value="CSE">CSE</option>
+    <option value="ME">ME</option>
+    <option value="CE">CE</option>
+  </select>
+            </div>
+          </div>
+          <div class="department">
+            <div class="fill-the-form branch-dob-padding">DOB</div>
+            <div class="datemax">
+              <input type="text" id="datemax" min="2002-01-01" placeholder="dd/mm/yyyy">
+              <div id="date-required" class="required-things"></div>
+            </div>
+          </div>
+        </div>
+        <div class="department margin">
+          <div class="fill-the-form address">Enter your address</div>
+          <div>
+            <textarea rows="3" cols="50" name="usr" wrap="soft" placeholder="Type your address here!"></textarea>
+          </div>
+        </div>
+        <div class="department margin">
+          <div class="fill-the-form address select-speed">Select your typing speed</div>
+          <div class="address"><input type="range" id="change-speed" min="0" max="100"></div>
+          <div id="speedInNumbers">50</div>
+        </div>
+        <div>
+          <div class="department margin">
+            <input id="checkbox" type="checkbox" />
+            <div class="fill-the-form terms-conditions">I accept the use of <a href="#">Terms of Use</a> & <a href="#">Privacy Policy</a></div>
+          </div>
+          <div id="accept-terms" class="required-things"></div>
+        </div>
+        <div style="text-align:center" class="margin">
+          <button id="sign-up-last"><b>Sign Up</b></button>
+        </div>
+      </div>
+    </div>
+    <div class="top-margin">
+      <div>Already have an account? <a href="#">Login here</a></div>
+    </div>
+    <script src="sign-up.js"></script>
+  </body>
+
+</html>

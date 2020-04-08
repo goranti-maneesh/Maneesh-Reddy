@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>RGB App</title>
+    <link rel="stylesheet" href="rgb-app.css" />
+  </head>
+
+  <body>
+    <div id="console-root"></div>
+    <script src="https://tap.ibhubs.in/utils/console.js"></script>
+    <!-- Write your html code from here-->
+    <div class="total-component">
+      <div id="left-component">
+        <div id="left-component-colors">
+          <button class="red button background-hover" onclick="leftComponentFunction('red')">Red</button>
+          <button class="blue button background-hover" onclick="leftComponentFunction('blue')">Blue</button>
+          <button class="green button background-hover" onclick="leftComponentFunction('green')">Green</button>
+        </div>
+        <div id="left-parent-arrows">
+          <button class="arrows background-hover hover-arrow" onclick="leftComponentLeftArrow()"><img src="assets/left-arrow.png"></button>
+          <button class="arrows background-hover hover-arrow" onclick="leftComponentRightArrow()"><img src="assets/right-arrow.png"></button>
+          <button class="arrows background-hover hover-arrow" onclick="leftComponentUpArrow()"><img src="assets/up-arrow.png"></button>
+          <button class="arrows background-hover hover-arrow" onclick="leftComponentDownArrow()"><img src="assets/down-arrow.png"></button>
+        </div>
+      </div>
+      <div class="right-parent-component">
+        <div id="right-top-component">
+          <div id="right-top-component-colors">
+            <button class="red button background-hover" onclick="rightTopComponentFunction('red')">Red</button>
+            <button class="blue button background-hover" onclick="rightTopComponentFunction('blue')">Blue</button>
+            <button class="green button background-hover" onclick="rightTopComponentFunction('green')">Green</button>
+          </div>
+          <div class="right-component-arrows">
+            <button class="arrows background-hover hover-arrow"><img src="assets/up-arrow.png"></button>
+            <button class="arrows background-hover hover-arrow" onclick="rightTopComponentDownArrowfunction()"><img src="assets/down-arrow.png"></button>
+          </div>
+        </div>
+        <div id="right-middle-component">
+          <div id="right-top-component-colors">
+            <button class="red button background-hover" onclick="rightMiddleComponentFunction('red')">Red</button>
+            <button class="blue button background-hover" onclick="rightMiddleComponentFunction('blue')">Blue</button>
+            <button class="green button background-hover" onclick="rightMiddleComponentFunction('green')">Green</button>
+          </div>
+          <div class="right-component-arrows">
+            <button class="arrows background-hover hover-arrow" onclick="rightTopComponentDownArrowfunction()"><img src="assets/up-arrow.png"></button>
+            <button class="arrows background-hover hover-arrow" onclick="rightMiddleComponentDownArrowfunction()"><img src="assets/down-arrow.png"></button>
+          </div>
+        </div>
+        <div id="right-bottom-component">
+          <div id="right-top-component-colors">
+            <button class="red button background-hover" onclick="rightBottomComponentFunction('red')">Red</button>
+            <button class="blue button background-hover" onclick="rightBottomComponentFunction('blue')">Blue</button>
+            <button class="green button background-hover" onclick="rightBottomComponentFunction('green')">Green</button>
+          </div>
+          <div class="right-component-arrows">
+            <button class="arrows background-hover hover-arrow" onclick="rightMiddleComponentDownArrowfunction()"><img src="assets/up-arrow.png"></button>
+            <button class="arrows background-hover hover-arrow"><img src="assets/down-arrow.png"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="rgb-app.js"></script>
+  </body>
+
+</html>

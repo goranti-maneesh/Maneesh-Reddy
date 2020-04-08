@@ -1,0 +1,55 @@
+.start-stop-button {
+    background-color: green;
+    width: 60px;
+    height: 30px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.accelerate-button {
+    width: 150px;
+    height: 30px;
+    background-color: lightgrey;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.decelerate-button {
+    width: 150px;
+    height: 30px;
+    background-color: lightgrey;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.div-for-speed-break {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+}
+
+.main-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 500px;
+    height: 150px;
+    margin-left: 200px;
+    margin-bottom: 100px;
+    background-color: #f2f2f2;
+    padding: 50px;
+}
+
+.car-status-indicator {
+    display: flex;
+}
+
+.add-car {
+    background-color: blue;
+    margin-left: 730px;
+    margin-bottom: 50px;
+    padding: 10px;
+    color: white;
+    display: flex;
+    flex-direction: row-reverse;
+}

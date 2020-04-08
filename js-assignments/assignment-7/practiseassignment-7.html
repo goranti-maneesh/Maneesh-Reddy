@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+
+      <head>
+            <style>
+                  .div-hover {
+                        width: 100px;
+                        height: 100px;
+                        background-color: yellowgreen;
+                        transition-property: width;
+                        transition-duration: 5s;
+                  }
+
+                  .active {
+                        width: 300px;
+                  }
+            </style>
+      </head>
+
+      <body>
+            <div id="console-root"></div>
+            <script src="https://tap.ibhubs.in/utils/console.js"></script>
+            <!--<script>
+                  //       console.log("Hellow")
+                  //       //question - 1
+                  //       console.log(["rest", "more", "regret", "tree"].filter(check => check.match(/^t|r$/g)));
+
+
+
+                  //       //question - 2
+                  //       let inputForUniqueCharacters = "Be proactive";
+                  //       let arrayForUnqueCharacters = [...inputForUniqueCharacters];
+                  //       let outputForUniqueCharacters = arrayForUnqueCharacters.filter((item, index) => arrayForUnqueCharacters.indexOf(item) === index);
+                  //       console.log(outputForUniqueCharacters);
+
+
+
+                  //       //question - 3
+                  //       //let a = ["Raj", "Viraj", "Ram", "Vikram"];
+                  //       let arrayElements = ["Raj", "Viraj", "Ram", "Vikram"].map(check => check.toUpperCase());
+                  //       console.log(arrayElements);
+
+
+
+
+                  //       //question - 4
+                  //       function check(item, index) {
+                  //             if (index % 2 == 0) {
+                  //                   return item ** 2;
+                  //             }
+                  //             else {
+                  //                   return item;
+                  //             }
+                  //       }
+                  //       let inputOfSquaresOfAlternateNumbers = [3, 14, 12, 1, 7, 0];
+                  //       console.log([...inputOfSquaresOfAlternateNumbers].map((item, index) => check(item, index)));
+
+
+
+                  //       //question - 5
+                  //       let count = 0;
+                  //       let inputToCheckStringOrNot = ["i", "B", "H", "u", "b", "s"];
+                  //       inputToCheckStringOrNot.forEach(function(element) {
+                  //             if (typeof(element) === "string") {
+                  //                   count = count + 1;
+                  //             }
+                  //       });
+                  //       if (count == inputToCheckStringOrNot.length) {
+                  //             console.log(true);
+                  //       }
+                  //       else {
+                  //             console.log(false);
+                  //       }
+
+
+
+
+                  //       //question - 6
+                  //       let toCheckPalindrome = 0;
+                  //       let inputToCheckPalindrome = ["Ha ha", "He eh", "Hey eyh"];
+                  //       inputToCheckPalindrome.forEach(function(item) {
+                  //             item = item.toLowerCase();
+                  //             let palindromeHalfLength = Math.floor((item.length) / 2);
+                  //             let num = 0;
+                  //             for (let i = 0; i < palindromeHalfLength; i++) {
+                  //                   if (item[i] === item[item.length - 1 - i]) {
+                  //                         num = num + 1;
+                  //                   }
+                  //             }
+                  //             if (num === palindromeHalfLength) {
+                  //                   toCheckPalindrome = 1;
+                  //             }
+                  //       });
+                  //       if (toCheckPalindrome === 1) {
+                  //             console.log(true);
+                  //       }
+                  //       else {
+                  //             console.log(false);
+                  //       }
+
+
+
+
+
+                  //       //question - 7
+                  //       function match(arrayElement, inputString, inputLength, lengthOfInputString) {
+                  //             let findInputString = arrayElement.slice(0, lengthOfInputString);
+                  //             if ((findInputString === inputString) && (arrayElement.length === inputLength)) {
+                  //                   return arrayElement;
+                  //             }
+                  //       }
+                  //       let inputToFindArray = ["birch", "maple", "bonsai", "oak", "poplar"];
+                  //       let inputString = "b";
+                  //       let inputLength = 5;
+                  //       console.log(inputToFindArray.find((arrayElement) => match(arrayElement, inputString, inputLength, inputString.length)));
+
+
+
+
+                  //       //question - 8
+                  //       let inputTrees = [
+                  //             { name: "birch", count: 10, type: "outdoor" },
+                  //             { name: "maple", count: 7, type: "indoor/outdoor" },
+                  //             { name: "peacelilly", count: 6, type: "indoor" },
+                  //             { name: "oak", count: 2, type: "outdoor" },
+                  //             { name: "lucky bamboo", count: 7, type: "indoor" }
+                  //       ];
+                  //       console.log(inputTrees.find(object => object.count > 6 && object.type == "indoor"));
+                  //
+            </script>-->
+            <input type="text" placeholder="Name" />
+            <input type="text" id="name" placeholder="Name" />
+            <script>
+                  const nameElement = document.getElementById('name');
+                  nameElement.onchange = man => {
+                        //console.log('Will log when value changes,blurred', man.target.value);
+                  };
+            </script>
+            <button id="loginButton">Button</button>
+            <script>
+                  const buttonElement = document.getElementById("loginButton");
+                  buttonElement.onclick = () => {
+                        console.log('Button Clicked');
+                  }
+            </script>
+
+
+
+            <div>
+                  <input type="text" id="name" placeholder="name" />
+                  <input type="password" id="password" placeholder="password" />
+                  <button id="submit">Log In</button>
+            </div>
+            <script>
+                  document.getElementById("name").onkeydown = (event) => {
+                        if (event.keyCode === 13) document.getElementById("password").focus();
+                        console.log(event.target.value);
+                  };
+                  document.getElementById("password").onkeydown = (event) => {
+                        if (event.keyCode === 13) {
+                              document.getElementById("submit").click();
+                              console.log(event.target.value);
+                        }
+                  };
+            </script>
+            <div>
+                  <input type="radio" name="gender" id="gender-male" />
+                  <lable>Male</lable>
+                  <input type="radio" name="gender" id="gender-female" />
+                  <lable>Female</lable>
+            </div>
+            <div id='gender'></div>
+            <script>
+                  let a = 0
+
+                  document.getElementById("gender-male").onclick = () => {
+                        alert("male");
+                  }
+                  document.getElementById("gender-female").onclick = () => {
+                        alert("female");
+                  }
+                  if (a == 2) {
+                        document.getElementById("gender").innerHTML = "required";
+                  }
+            </script>
+            <div onclick="divone()">
+                  <div onclick="divtwo()">
+                        <div onclick="divThree()"></div>
+                  </div>
+            </div>
+            <div id="totalTodo">
+                  <div>
+                        <input type="text" id="myInput" placeholder="Todo List">
+                  </div>
+                  <ul id="myUL">
+
+                  </ul>
+            </div>
+            <script>
+                  let close = document.getElementsByClassName("close");
+                  let i;
+
+
+                  document.getElementById("totalTodo").addEventListener("keypress", function(event) {
+                        if (event.keyCode == 13) {
+                              console.log(event.target);
+                              let li = document.createElement("li");
+                              let inputValue = document.getElementById("myInput").value;
+                              let t = inputValue;
+                              console.log(t);
+                              if (inputValue === '') {
+                                    //alert("You must write something!");
+                              }
+                              else {
+                                    document.getElementById("myUL").appendChild(li);
+                              }
+                              document.getElementById("myInput").value = "";
+
+                              let span = document.createElement("SPAN");
+                              let txt = document.createTextNode("x");
+                              let input = document.createElement("INPUT");
+                              span.className = "close";
+                              input.typeName = "text";
+                              input.idName = "inputId";
+                              input.value = t;
+                              li.appendChild(input);
+                              span.appendChild(txt);
+                              li.appendChild(span);
+                              console.log(close);
+                              console.log(t);
+
+
+                              for (i = 0; i < close.length; i++) {
+                                    close[i].onclick = function() {
+                                          let remove = this.parentElement;
+                                          remove.style.display = "none";
+                                    };
+                              }
+                        }
+                  });
+            </script>
+            <form id="loginForm" class="login-form">
+                  <input type="text" class="default-input" placeholder="name" />
+                  <input type="password" class="default-input" placeholder="password" />
+                  <button id="submitBtn">Submit</button>
+            </form>
+            <script>
+                  const submitBtnEl = document.getElementById("submitBtn");
+
+                  submitBtnEl.onclick = (event) => {
+                        console.log("button clicked");
+                  };
+            </script>
+            <div class="div-hover" id="transition"></div>
+            <script>
+                  const transitionElement = document.getElementById("transition");
+                  document.ontouchstart = () => {
+                        transitionElement.classList.add('active');
+                  };
+                  document.ontouchend = () => {
+                        transitionElement.classList.remove('active');
+                  };
+            </script>
+      </body>
+
+</html>

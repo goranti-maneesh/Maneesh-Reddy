@@ -1,0 +1,70 @@
+.values {
+      height: 60px;
+      width: 70px;
+      border: 1px solid #bfbfbf;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      margin-left: 8px;
+      margin-right: 8px;
+      font-size: 20px;
+      border-radius: 3px;
+}
+
+.operator {
+      color: #0066cc;
+}
+
+.AC {
+      background-color: #ff471a;
+      color: white;
+}
+
+.column-1 {
+      display: flex;
+      flex-direction: column;
+}
+
+.main {
+      display: flex;
+      width: 360px;
+      border: 1px solid grey;
+      background-color: white;
+}
+
+.column-4 {
+      display: flex;
+      flex-direction: column;
+}
+
+.equal {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      justify-content: center;
+      background-color: #0066cc;
+      color: white;
+}
+
+#output {
+      height: 50px;
+      width: 332px;
+      background-color: black;
+      color: white;
+      font-size: 35px;
+      display: flex;
+      align-items: center;
+      flex-direction: row-reverse;
+      padding: 15px;
+}
+
+.padding-left {
+      padding-left: 8px;
+}
+
+.padding-top {
+      margin-top: 17px;
+}
+
+.padding-bottom {
+      margin-bottom: 17px;
+}
